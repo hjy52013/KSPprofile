@@ -200,7 +200,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 18223019.856038794
+		update = 18171394.0820769
 		version = 1.4.3
 		WEIGHTS
 		{
@@ -208,8 +208,8 @@ GAME
 			SurveyContract = 10
 			StationContract = 11
 			SentinelContract = 24
-			SatelliteContract = 44
-			ISRUContract = 29
+			SatelliteContract = 45
+			ISRUContract = 30
 			ExplorationContract = 30
 			BaseContract = 30
 			ARMContract = 27
@@ -231,13 +231,107 @@ GAME
 			Duna = 10
 			Eve = 30
 			Moho = 30
-			Minmus = 43
-			Mun = 59
+			Minmus = 44
+			Mun = 60
 			Kerbin = 10
 			Sun = 20
 		}
 		CONTRACTS
 		{
+			CONTRACT
+			{
+				guid = 7628d069-94d5-4fa0-9e16-1525555a19c4
+				type = ISRUContract
+				prestige = 0
+				seed = 1313062999
+				state = Offered
+				viewed = Seen
+				agent = Reaction Systems Ltd
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,161028000,79912,213830.390289307,83907.5961894989,0,21.90476,11,18179414.7732771,0,0,0
+				targetBody = 3
+				gatherGoal = 500
+				targetResource = Ore
+				resourceTitle = 矿石
+				isDelivering = False
+				PARAM
+				{
+					name = ResourceExtractionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 3
+					totalHarvested = 0
+					goalHarvested = 500
+					resourceName = Ore
+					resourceTitle = 矿石
+					notifyLevel = 0.25
+					modules = ModuleResourceHarvester
+				}
+			}
+			CONTRACT
+			{
+				guid = 75bcd724-a81a-4a83-829a-ea7245a8d1d0
+				type = SatelliteContract
+				prestige = 0
+				seed = 1313063005
+				state = Offered
+				viewed = Seen
+				agent = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 128316.832065582,91104950.7665634,6337.25484967699,17051.175555566,6719.99969482422,0,1.942857,1,18178131.6053427,0,0,0
+				targetBody = 2
+				deviation = 7
+				orbitType = 6
+				placementMode = 1
+				PARAM
+				{
+					name = SpecificVesselParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 2
+					targetVesselID = 6e46874501d84aaf8cfd5d58209bdff8
+					targetVesselPartCount = 12
+					targetVesselName = 集成积分企业绕月探测器
+					targetVesselSituation = ORBITING
+					partIDs = 878155834|660852467|2233005000|255488080|2845630755|454112255|3040494149|1548587404|1560012678|993853240|2085926620|13591893
+				}
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = 探测器
+					mannedStatus = 1
+					requireNew = False
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = 拥有一根天线|能够发电
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 2
+					deviationWindow = 7
+					orbitType = 6
+					inclination = 1.609980056070963
+					eccentricity = 0.10331198101093418
+					sma = 673417.16599824536
+					lan = 206.67490754145041
+					argumentOfPeriapsis = 68.631876432038652
+					meanAnomalyAtEpoch = 0.35899033042923556
+					epoch = 16937486.019316483
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
 			CONTRACT
 			{
 				guid = 24130eb0-fe50-4d7f-9fa0-3a00e95713c3
@@ -406,6 +500,61 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 20125bf5-74e8-473e-9eae-47ba93c5190e
+				type = SentinelContract
+				prestige = 0
+				seed = 278982938
+				state = Offered
+				viewed = Unseen
+				agent = Goliath National Products
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,230040000,102000,153000,102000,3,6,3,18192910.77903,0,0,0
+				innerBody = 5
+				outerBody = 1
+				asteroidCount = 9
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = “哨兵”红外望远镜
+					vesselDescription = 载具
+					partNames = InfraredTelescope
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 0
+					deviationWindow = 7
+					orbitType = 6
+					inclination = -0.0009442849550396204
+					eccentricity = 0.0012250862782821059
+					sma = 10692185070.045189
+					lan = 0
+					argumentOfPeriapsis = 0
+					meanAnomalyAtEpoch = 3.1419502974208009
+					epoch = 0
+				}
+				PARAM
+				{
+					name = SentinelParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					FocusBody = 1
+					ScanType = NONE
+					TargetSize = E
+					MinimumEccentricity = 0
+					MinimumInclination = 0
+					TotalDiscoveries = 9
+					RemainingDiscoveries = 9
+				}
+			}
+			CONTRACT
+			{
 				guid = 2cb1e6e9-4edc-45cd-b2a9-fd95e9d51884
 				type = SatelliteContract
 				prestige = 0
@@ -557,6 +706,69 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					targetBody = 3
+					targetSituation = ORBITING
+					noun = 空间站
+					finalObjective = False
+				}
+			}
+			CONTRACT
+			{
+				guid = c5aef0e2-040f-4d05-8f1e-55ed60820fb9
+				type = StationContract
+				prestige = 1
+				seed = 278982948
+				state = Offered
+				viewed = Unseen
+				agent = Maxo Construction Toys
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,257644800,184000,477250,184000,21,22,11,18192910.77903,0,0,0
+				targetBody = 0
+				capacity = 5
+				contextual = False
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = 空间站
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = 拥有一根天线|拥有一个对接口|能够发电
+					launchID = 0
+				}
+				PARAM
+				{
+					name = CrewCapacityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetCapacity = 5
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = 研究实验室
+					vesselDescription = 空间站
+					partNames = Large_Crewed_Lab
+					moduleNames = ModuleScienceLab
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 0
 					targetSituation = ORBITING
 					noun = 空间站
 					finalObjective = False
@@ -771,200 +983,6 @@ GAME
 					targetBody = 7
 					targetSituation = ORBITING
 					noun = 矿石
-					finalObjective = False
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = 4e1d9c73-09ce-4afd-b814-b8c790065278
-				type = SatelliteContract
-				prestige = 0
-				seed = 243114570
-				state = Offered
-				viewed = Unseen
-				agent = Probodobodyne Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,115020000,42000,107625,42000,9,10.8,5.4,18351385.1097705,0,0,0
-				targetBody = 3
-				deviation = 7
-				orbitType = 3
-				placementMode = 0
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = 探测器
-					mannedStatus = 1
-					requireNew = True
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = 拥有一根天线|能够发电
-					launchID = 0
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 3
-					deviationWindow = 7
-					orbitType = 3
-					inclination = 180
-					eccentricity = 0.0033709217926046883
-					sma = 442091.19233455922
-					lan = 0
-					argumentOfPeriapsis = 162.34786940847857
-					meanAnomalyAtEpoch = -0.54796850169379563
-					epoch = 0
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = an
-					partDescription = 加速度计
-					vesselDescription = 卫星
-					partNames = sensorAccelerometer
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = f4dc9a71-ed4e-4bae-a70a-79e93b899583
-				type = SentinelContract
-				prestige = 0
-				seed = 243114574
-				state = Offered
-				viewed = Unseen
-				agent = Dinkelstein Kerman's Construction Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,230040000,105059.997081757,165469.48788929,110312.991926193,3,5.412537,2.926829,18329785.1097705,0,0,0
-				innerBody = 5
-				outerBody = 1
-				asteroidCount = 9
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = a
-					partDescription = “哨兵”红外望远镜
-					vesselDescription = 载具
-					partNames = InfraredTelescope
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 0
-					deviationWindow = 7
-					orbitType = 6
-					inclination = -0.00049740518443286419
-					eccentricity = 0.0082093933597207069
-					sma = 11062227568.483332
-					lan = 0
-					argumentOfPeriapsis = 0
-					meanAnomalyAtEpoch = 3.1415475321332971
-					epoch = 0
-				}
-				PARAM
-				{
-					name = SentinelParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					FocusBody = 1
-					ScanType = NONE
-					TargetSize = E
-					MinimumEccentricity = 0
-					MinimumInclination = 0
-					TotalDiscoveries = 9
-					RemainingDiscoveries = 9
-				}
-			}
-			CONTRACT
-			{
-				guid = 9b7d609a-25ab-4afe-98a9-605b33ec3e57
-				type = RecoverAsset
-				prestige = 0
-				seed = 243114575
-				state = Offered
-				viewed = Unseen
-				agent = Dinkelstein Kerman's Construction Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,26779.999256134,64241.095298195,28118.9979419709,0,9.020896,9.756098,18351385.1097705,0,0,0
-				targetBody = 1
-				kerbalName = Jebediah Kerman
-				partName = adapterSize2-Size1
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 2
-				PARAM
-				{
-					name = AcquirePart
-					state = Incomplete
-					values = 6600,0,0,4,0
-					title = 获得部件 HJWTLX
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverPart
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = 在Kerbin回收部件 HJWTLX
-					failOn = AnyCandidate
-					winOn = AllCandidates
-				}
-			}
-			CONTRACT
-			{
-				guid = 2cf4ef83-0a9b-4aa3-8967-f239029682ff
-				type = ARMContract
-				prestige = 1
-				seed = 243114576
-				state = Offered
-				viewed = Unseen
-				agent = Goliath National Products
-				deadlineType = Floating
-				expiryType = Floating
-				values = 86400,257644800,431250,1125000,431250,30,61,30,18308185.1097705,0,0,0
-				targetBody = 0
-				asteroidClass = C
-				isLanding = False
-				PARAM
-				{
-					name = AsteroidParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					forStation = False
-					asteroidClass = C
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 0
-					targetSituation = ESCAPING
-					noun = 航天器
 					finalObjective = False
 				}
 				PARAM
@@ -7268,7 +7286,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 430800612
+		lastSeed = 1847676035
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -7326,12 +7344,12 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 18232433.178562731
+		NextSpawnTime = 18184330.705682483
 	}
 	FLIGHTSTATE
 	{
 		version = 1.4.3
-		UT = 18223021.396038759
+		UT = 18171394.762076885
 		activeVessel = 0
 		mapViewFiltering = 16383
 		commNetUIModeTracking = Network
@@ -14695,11 +14713,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 2.7970060097343272
+				INC = 2.7970060097341967
 				LPE = 270
-				LAN = 318.11405951919488
+				LAN = 184.39198884945412
 				MNA = 0
-				EPH = 18223019.816038795
+				EPH = 18171394.042076901
 				REF = 2
 			}
 			PART
@@ -22760,13 +22778,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.164662971129
-				ECC = 0.99999999999999989
-				INC = 3.863009040358421
+				SMA = NaN
+				ECC = 1
+				INC = 3.8630090403585156
 				LPE = 270
-				LAN = 181.44588500351196
-				MNA = 3.1415926207170166
-				EPH = 18223019.816038795
+				LAN = 81.414235838132981
+				MNA = 0
+				EPH = 18171394.042076901
 				REF = 3
 			}
 			PART
@@ -32061,11 +32079,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 0.06745656875465883
+				INC = 0.067456568884329743
 				LPE = 90
-				LAN = 216.294355643703
+				LAN = 82.572284973815044
 				MNA = 0
-				EPH = 18223019.816038795
+				EPH = 18171394.042076901
 				REF = 2
 			}
 			PART
@@ -36796,13 +36814,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101505.25446152728
+				SMA = 101505.25446152787
 				ECC = 0.99999999999999989
-				INC = 0.065885341984561044
+				INC = 0.065885341990092841
 				LPE = 90.000000000000014
-				LAN = 216.29693754128482
+				LAN = 82.574866871543975
 				MNA = 3.1415926207170166
-				EPH = 18223019.816038795
+				EPH = 18171394.042076901
 				REF = 2
 			}
 			PART
@@ -36968,13 +36986,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101505.20550672688
+				SMA = 101505.20550672646
 				ECC = 0.99999999999999989
-				INC = 0.066846622901907155
-				LPE = 90.000000000000014
-				LAN = 216.29669213044227
-				MNA = -3.1415926207170166
-				EPH = 18223019.816038795
+				INC = 0.066846622896454891
+				LPE = 90
+				LAN = 82.574621460701223
+				MNA = 3.1415926207170166
+				EPH = 18171394.042076901
 				REF = 2
 			}
 			PART
@@ -48761,13 +48779,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 30001.905165661727
+				SMA = 30001.905165691536
 				ECC = 0.99999999999999989
-				INC = 6.1900913019684412
+				INC = 6.19009130215486
 				LPE = 270
-				LAN = 57.895788423674276
+				LAN = 317.8641392577731
 				MNA = 3.1415926207170166
-				EPH = 18223019.816038795
+				EPH = 18171394.042076901
 				REF = 3
 			}
 			PART
@@ -53151,11 +53169,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 6.2014741835659555
+				INC = 6.2014741835664857
 				LPE = 270
-				LAN = 57.886825194272092
+				LAN = 317.85517602889013
 				MNA = 0
-				EPH = 18223019.816038795
+				EPH = 18171394.042076901
 				REF = 3
 			}
 			PART
@@ -56174,14 +56192,14 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = -26050515.395676769
-				ECC = 1.2226071402887584
-				INC = 63.53077491925611
-				LPE = 288.94470089069517
-				LAN = 254.17370572101146
-				MNA = -2.1371620633831716
-				EPH = 18221670.388429623
-				REF = 1
+				SMA = 14732060345.945959
+				ECC = 0.079664408340018991
+				INC = 1.4272160309998352
+				LPE = 164.76938068480737
+				LAN = 357.7284921955831
+				MNA = 0.25801308840816473
+				EPH = 18406408.844702177
+				REF = 0
 			}
 			PART
 			{
@@ -56652,6 +56670,108 @@ GAME
 		}
 		VESSEL
 		{
+			pid = 7e92483dd7dc41d2b70f4466952d4f88
+			persistentId = 2533121920
+			name = Ast.IAY-659
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 18041789.816619359
+			lct = 18041789.816619359
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.75763464618811449
+			lon = -102.81832100019052
+			alt = 14283548132.713707
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.632272601,0.465148747,0.539918721,0.303901136
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14068152069.840088
+				ECC = 0.037329172690944198
+				INC = 1.5656360182645548
+				LPE = 5.0959864337341481
+				LAN = 323.07115973170534
+				MNA = -0.17820569942428041
+				EPH = 21919464.755584203
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1472928155
+				mid = 1472928155
+				persistentId = 9150397
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 18041789.816619359
+				lifetime = 167757.02819824219
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
 			pid = 1b6e4ca1494f4967bcb701c0a1476d99
 			persistentId = 4247258968
 			name = Ast.TDW-443
@@ -56942,108 +57062,6 @@ GAME
 				lifetime = 1711532.0434570313
 				refTime = 1728000
 				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 2bb3bcfc0962447c8efbe2b5dbb838c4
-			persistentId = 4001052721
-			name = Ast.CNS-355
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 18217912.931547839
-			lct = 18217912.931547839
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = 0.92177924407608169
-			lon = 110.86770491936569
-			alt = 13499647469.970676
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.354611486,-0.299042284,-0.767353356,0.442711204
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 13810654814.572033
-				ECC = 0.01707688143054488
-				INC = 0.97767017483886742
-				LPE = 188.33217455159755
-				LAN = 62.992884166714987
-				MNA = -0.14902057701055313
-				EPH = 20007728.165922839
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 430800612
-				mid = 430800612
-				persistentId = 754095364
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 18217912.931547839
-				lifetime = 931529.74548339844
-				refTime = 1728000
-				size = 3
 			}
 			FLIGHTPLAN
 			{

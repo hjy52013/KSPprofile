@@ -2,19 +2,19 @@ ship = 未命名飞船
 version = 1.4.3
 description = 
 type = VAB
-size = 1.33399999,2.03694153,1.35917401
-persistentId = 561072909
+size = 2.50002289,9.50635338,2.72988892
+persistentId = 1144009008
 rot = 0,0,0,0
 missionFlag = Squad/Flags/NASA
 vesselType = Debris
 PART
 {
-	part = probeStackSmall_4293872006
+	part = probeStackSmall_4290781840
 	partName = Part
-	persistentId = 167794817
-	pos = 0,15,0
+	persistentId = 3847687876
+	pos = -0.23775436,18.9731388,0.910516739
 	attPos = 0,0,0
-	attPos0 = 0,15,0
+	attPos0 = -0.23775436,18.9731388,0.910516739
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -32,8 +32,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = SmallTank_4293855256
-	attN = bottom,SmallTank_4293855256_0|-0.1|0
+	link = dockingPort2_4290753982
+	link = largeAdapter_4290733952
+	attN = bottom,largeAdapter_4290733952_0|-0.1|0
+	attN = top,dockingPort2_4290753982_0|0.1|0
 	EVENTS
 	{
 	}
@@ -788,12 +790,91 @@ PART
 }
 PART
 {
-	part = SmallTank_4293855256
+	part = dockingPort2_4290753982
 	partName = Part
-	persistentId = 2280869272
-	pos = 0,14,0
+	persistentId = 904360248
+	pos = -0.23775436,19.0731392,0.910516739
 	attPos = 0,0,0
-	attPos0 = 0,-1,0
+	attPos0 = 0,0.100000381,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,probeStackSmall_4290781840_0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		crossfeed = True
+		stagingEnabled = False
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
+			EnableXFeedAction
+			{
+				actionGroup = None
+			}
+			DisableXFeedAction
+			{
+				actionGroup = None
+			}
+			ToggleXFeedAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = largeAdapter_4290733952
+	partName = Part
+	persistentId = 1336773692
+	pos = -0.23775436,18.1231384,0.910516739
+	attPos = 0,0,0
+	attPos0 = 0,-0.850000381,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -811,7 +892,45 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,probeStackSmall_4293872006_0|0.9|0
+	link = Rockomax64.BW_4290708996
+	attN = top,probeStackSmall_4290781840_0|0.75|0
+	attN = bottom,Rockomax64.BW_4290708996_0|-0.755|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = Rockomax64.BW_4290708996
+	partName = Part
+	persistentId = 3766437802
+	pos = -0.23775436,13.6381378,0.910516739
+	attPos = 0,0,0
+	attPos0 = 0,-4.48500061,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,largeAdapter_4290733952_0|3.73|0
 	EVENTS
 	{
 	}
@@ -823,7 +942,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleFuelJettison
+		name = ModulePartVariants
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -831,10 +950,6 @@ PART
 		}
 		ACTIONS
 		{
-			FuelJettisonAction
-			{
-				actionGroup = None
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -842,9 +957,20 @@ PART
 	}
 	RESOURCE
 	{
-		name = Ore
-		amount = 300
-		maxAmount = 300
+		name = LiquidFuel
+		amount = 2880
+		maxAmount = 2880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 3520
+		maxAmount = 3520
 		flowState = True
 		isTweakable = True
 		hideFlow = False

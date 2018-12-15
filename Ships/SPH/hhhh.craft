@@ -1,8 +1,9 @@
 ship = hhhh
-version = 1.4.3
+version = 1.5.1
 description = 
 type = SPH
-size = 10.2893276,3.44315577,12.9142971
+size = 10.2893524,3.44315624,12.9143124
+steamPublishedFileId = 0
 persistentId = 861820161
 rot = 0,0,0,0
 missionFlag = Squad/Flags/NASA
@@ -12,9 +13,9 @@ PART
 	part = mk2Cockpit.Inline_4294723958
 	partName = Part
 	persistentId = 2546212609
-	pos = -0.010741204,2.99652481,-0.624422133
+	pos = -0.0127524436,1.81892145,-0.412326783
 	attPos = 0,0,0
-	attPos0 = -0.010741204,2.99652481,-0.624422133
+	attPos0 = -0.0127524436,1.81892145,-0.412326783
 	rot = 0.707106829,0,0,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0.707106769,0,0,0.707106769
@@ -34,9 +35,9 @@ PART
 	modSize = 0,0,0
 	link = mk2SpacePlaneAdapter_4294580426
 	link = mk2Fuselage_4294511322
-	link = CanardController_4294092704
-	link = CanardController_4293924108
 	link = SmallGearBay_4293866028
+	link = CanardController_4294092704
+	link = CanardController_4291672198
 	attN = top,mk2SpacePlaneAdapter_4294580426_0|1.25|0
 	attN = bottom,mk2Fuselage_4294511322_0|-1.25|0
 	EVENTS
@@ -233,6 +234,44 @@ PART
 	}
 	MODULE
 	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 2000
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = MechJebCore
 		isEnabled = True
 		running = True
@@ -324,6 +363,11 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
+			MechJebModuleAscentAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
 			MechJebModuleAscentClassic
 			{
 				unlockParts = 
@@ -344,6 +388,11 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
+			MechJebModuleAscentGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
 			MechJebModuleAscentNavBall
 			{
 				unlockParts = 
@@ -359,27 +408,17 @@ PART
 				unlockParts = 
 				unlockTechs = 
 			}
-			MechJebModuleDebugArrows
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentGuidance
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
 			MechJebModuleAttitudeAdjustment
 			{
 				unlockParts = 
 				unlockTechs = 
 			}
 			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDebugArrows
 			{
 				unlockParts = 
 				unlockTechs = 
@@ -667,12 +706,6 @@ PART
 			MechJebModuleCustomInfoWindow
 			{
 			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
 			MechJebModuleWarpController
 			{
 				unlockParts = 
@@ -812,6 +845,40 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		helmetEquipped = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		helmetEquipped = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -840,7 +907,7 @@ PART
 	part = mk2SpacePlaneAdapter_4294580426
 	partName = Part
 	persistentId = 761343493
-	pos = -0.010741204,2.99652481,1.56308079
+	pos = -0.0127524436,1.81892145,1.77517796
 	attPos = 0,0,0
 	attPos0 = 0,2.18750024,-2.38418579E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -857,11 +924,12 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 0
-	modMass = 0
+	modCost = -9.53674316E-06
+	modMass = -5.58793545E-09
 	modSize = 0,0,0
 	link = pointyNoseConeA_4294536214
 	link = airScoop_4293909386
+	link = bdammGuidanceModule_4291715004
 	attN = top,pointyNoseConeA_4294536214_0|0.9375|0
 	attN = bottom,mk2Cockpit.Inline_4294723958_0|-0.9375|0
 	EVENTS
@@ -876,6 +944,107 @@ PART
 	MODULE
 	{
 		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 1200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Dynamic
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = fuelSwitch
+		currentSubtype = LF/O
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCryoTank
+		isEnabled = True
+		LastUpdateTime = 0
+		CoolingEnabled = False
+		BoiloffOccuring = False
+		DebugMode = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -916,7 +1085,7 @@ PART
 	part = pointyNoseConeA_4294536214
 	partName = Part
 	persistentId = 1809234046
-	pos = -0.010741204,2.99652481,3.12558508
+	pos = -0.0127524436,1.81892145,3.33768511
 	attPos = 0,0,0
 	attPos0 = 0,1.56250083,-2.3841848E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -961,13 +1130,51 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 600
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = mk2Fuselage_4294511322
 	partName = Part
 	persistentId = 2157354783
-	pos = -0.010741204,2.99652481,-3.7494278
+	pos = -0.0127524436,1.81892145,-3.53733635
 	attPos = 0,0,0
 	attPos0 = 0,-3.12500048,4.76837158E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -988,8 +1195,10 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = mk2.1m.Bicoupler_4294505524
+	link = bahaAim120_4291819190
+	link = bahaAim120_4291812200
 	link = sweptWing_4294150908
-	link = sweptWing_4293924012
+	link = sweptWing_4291672056
 	attN = top,mk2Cockpit.Inline_4294723958_0|1.875|0
 	attN = bottom,mk2.1m.Bicoupler_4294505524_0|-1.875|0
 	EVENTS
@@ -1005,6 +1214,44 @@ PART
 	{
 		name = ModuleLiftingSurface
 		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 2100
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Dynamic
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1033,7 +1280,7 @@ PART
 	part = mk2.1m.Bicoupler_4294505524
 	partName = Part
 	persistentId = 2586500390
-	pos = -0.010741204,2.99652481,-6.56193018
+	pos = -0.0127524436,1.81892097,-6.34984064
 	attPos = 0,0,0
 	attPos0 = 0,-2.81250072,0
 	rot = 0.707106829,0,0,0.707106829
@@ -1050,8 +1297,8 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 0
-	modMass = 0
+	modCost = -9.53674316E-06
+	modMass = -5.58793545E-09
 	modSize = 0,0,0
 	link = turboJet_4294496776
 	link = turboJet_4294496450
@@ -1072,6 +1319,107 @@ PART
 	MODULE
 	{
 		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 1200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Dynamic
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = fuelSwitch
+		currentSubtype = LF/O
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCryoTank
+		isEnabled = True
+		LastUpdateTime = 0
+		CoolingEnabled = False
+		BoiloffOccuring = False
+		DebugMode = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -1112,7 +1460,7 @@ PART
 	part = turboJet_4294496776
 	partName = Part
 	persistentId = 2977327556
-	pos = -0.635741234,2.99652529,-7.49943733
+	pos = -0.637752414,1.81892192,-7.28735256
 	attPos = 0,0,0
 	attPos0 = -0.625,-0.937501907,0
 	rot = 0.707106829,0,0,0.707106829
@@ -1431,13 +1779,51 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 2000
+		Armor = 10
+		maxHitPoints = 2000
+		ArmorThickness = 10
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = turboJet_4294496450
 	partName = Part
 	persistentId = 1403898233
-	pos = 0.614258766,2.99652529,-7.49943733
+	pos = 0.612247586,1.81892192,-7.28735256
 	attPos = 0,0,0
 	attPos0 = 0.625,-0.937501907,0
 	rot = 0.707106888,0,0,0.707106769
@@ -1756,13 +2142,51 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 2000
+		Armor = 10
+		maxHitPoints = 2000
+		ArmorThickness = 10
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = tailfin_4293927006
 	partName = Part
 	persistentId = 1905642180
-	pos = -0.544875383,3.53065872,-5.84154034
+	pos = -0.546886563,2.35305595,-5.62944984
 	attPos = 0,0,0
 	attPos0 = -0.53413415,0.720389605,-0.534133673
 	rot = 0.23263979,0.667741537,0.636665821,0.307663262
@@ -1829,13 +2253,51 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 750
+		Armor = 10
+		maxHitPoints = 750
+		ArmorThickness = 10
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = tailfin_4293924352
 	partName = Part
 	persistentId = 2268689043
-	pos = 0.523392916,3.53065872,-5.84154034
+	pos = 0.521381736,2.35305595,-5.62944984
 	attPos = 0,0,0
 	attPos0 = 0.53413415,0.720389605,-0.534133673
 	rot = -0.636665881,-0.307663202,-0.232639849,-0.667741477
@@ -1902,15 +2364,965 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 750
+		Armor = 10
+		maxHitPoints = 750
+		ArmorThickness = 10
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SmallGearBay_4293866028
+	partName = Part
+	persistentId = 3930707252
+	pos = -0.013912715,1.45947564,1.18069887
+	attPos = 0,2.79954481,-0.370555043
+	attPos0 = -0.00116027147,-1.20652318,0.730000615
+	rot = -2.38418579E-07,0,0,1.00000012
+	attRot = 0,0,0,1
+	attRot0 = -0.707107008,0,0,0.70710665
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = ForceHeaviest
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,mk2Cockpit.Inline_4294723958
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleWheelBase
+		isEnabled = True
+		wheelType = FREE
+		isGrounded = False
+		autoFriction = True
+		frictionMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActAutoFrictionToggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+		isEnabled = True
+		springTweakable = 1
+		damperTweakable = 1
+		autoSpringDamper = True
+		suspensionPos = (-1, -1, -1)
+		autoBoost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSteering
+		isEnabled = True
+		steeringEnabled = True
+		steeringInvert = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			SteeringToggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelBrakes
+		isEnabled = True
+		brakeTweakable = 100
+		brakeInput = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			BrakeAction
+			{
+				actionGroup = Brakes
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStatusLight
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		isEnabled = True
+		shieldedCanDeploy = False
+		stateDisplayString = 已展开
+		stateString = Deployed
+		stagingEnabled = True
+		position = 1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = Gear
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleConstrainPosition
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		uiWriteLock = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+		isEnabled = True
+		isDamaged = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = airScoop_4293909386
+	partName = Part
+	persistentId = 795975969
+	pos = -0.0127524436,0.831764817,2.03592515
+	attPos = 0,0,0
+	attPos0 = 0,0.260745168,0.987153709
+	rot = -0.0336220562,0,0,0.999434829
+	attRot = 0,0,0,1
+	attRot0 = -0.730481446,0,0,0.682932675
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,mk2SpacePlaneAdapter_4294580426
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 600
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		isVisible = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = IntakeAtm
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = bahaAim120_4291819190
+	partName = Part
+	persistentId = 1883894840
+	pos = -0.623319745,1.20835257,-0.830901504
+	attPos = 0,0,0
+	attPos0 = -0.610567331,2.70642972,0.610567033
+	rot = -1.78813934E-07,1.63912773E-07,-0.382683456,0.923879623
+	attRot = 0,0,0,1
+	attRot0 = -0.653281629,-0.270597935,-0.270598173,0.653281391
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = bahaAim120_4291812200
+	srfN = srfAttach,mk2Fuselage_4294511322
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = MissileLauncher
+		isEnabled = True
+		decoupleForward = False
+		decoupleSpeed = 5
+		maxAltitude = 0
+		terminalGuidanceShouldActivate = True
+		DetonationOffset = 0.100000001
+		autoDetCalc = False
+		shortName = AIM-120
+		maxStaticLaunchRange = 25000
+		minStaticLaunchRange = 500
+		maxOffBoresight = 120
+		DetonationDistance = 10.8188658
+		dropTime = 0.550000012
+		inCargoBay = False
+		detonationTime = 2
+		BallisticOverShootFactor = 0.699999988
+		CruiseAltitude = 500
+		CruiseSpeed = 300
+		CruisePredictionTime = 5
+		gpsSet = False
+		assignedGPSCoords = (0, 0, 0)
+		gpsTargetName = 
+		engageEnabled = True
+		engageRangeMin = 500
+		engageRangeMax = 25000
+		engageAir = True
+		engageMissile = False
+		engageGround = False
+		engageSLW = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			AGFire
+			{
+				actionGroup = None
+			}
+			AGJettsion
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = BDExplosivePart
+		isEnabled = True
+		tntMass = 25
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ArmAG
+			{
+				actionGroup = None
+			}
+			DetonateAG
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 5
+		Armor = 2
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = bahaAim120_4291812200
+	partName = Part
+	persistentId = 2228854781
+	pos = 0.597814918,1.2083528,-0.83090198
+	attPos = 0,0,0
+	attPos0 = 0.610567331,2.70642948,0.610566914
+	rot = -1.78813934E-07,-1.1920929E-07,0.382683426,0.923879623
+	attRot = 0,0,0,1
+	attRot0 = -0.653281629,0.270597935,0.270598114,0.653281391
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = bahaAim120_4291819190
+	srfN = srfAttach,mk2Fuselage_4294511322
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = MissileLauncher
+		isEnabled = True
+		decoupleForward = False
+		decoupleSpeed = 5
+		maxAltitude = 0
+		terminalGuidanceShouldActivate = True
+		DetonationOffset = 0.100000001
+		autoDetCalc = False
+		shortName = AIM-120
+		maxStaticLaunchRange = 25000
+		minStaticLaunchRange = 500
+		maxOffBoresight = 120
+		DetonationDistance = 10.8188658
+		dropTime = 0.550000012
+		inCargoBay = False
+		detonationTime = 2
+		BallisticOverShootFactor = 0.699999988
+		CruiseAltitude = 500
+		CruiseSpeed = 300
+		CruisePredictionTime = 5
+		gpsSet = False
+		assignedGPSCoords = (0, 0, 0)
+		gpsTargetName = 
+		engageEnabled = True
+		engageRangeMin = 500
+		engageRangeMax = 25000
+		engageAir = True
+		engageMissile = False
+		engageGround = False
+		engageSLW = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			AGFire
+			{
+				actionGroup = None
+			}
+			AGJettsion
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = BDExplosivePart
+		isEnabled = True
+		tntMass = 25
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ArmAG
+			{
+				actionGroup = None
+			}
+			DetonateAG
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 5
+		Armor = 2
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = bdammGuidanceModule_4291715004
+	partName = Part
+	persistentId = 3527480928
+	pos = -0.0127525022,2.50455332,1.71688485
+	attPos = 0,0,0
+	attPos0 = -5.86733222E-08,-0.0582927875,-0.68563056
+	rot = 0,0.999434769,0.0336217284,0
+	attRot = 0,0,0,1
+	attRot0 = 0,0.730481207,-0.682932913,0
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,mk2SpacePlaneAdapter_4294580426
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BDModularGuidance
+		isEnabled = True
+		WeaponName = Unnamed
+		_targetingLabel = Radar
+		GuidanceIndex = 2
+		ActiveRadarRange = 6000
+		MaxSteer = 1
+		StagesNumber = 1
+		StageToTriggerOnProximity = 0
+		SteerDamping = 5
+		SteerMult = 10
+		RollCorrection = False
+		timeBetweenStages = 1
+		MinSpeedGuidance = 200
+		DetonationOffset = 0.100000001
+		autoDetCalc = False
+		shortName = Unnamed
+		maxStaticLaunchRange = 5000
+		minStaticLaunchRange = 10
+		maxOffBoresight = 360
+		DetonationDistance = -1
+		dropTime = 0.5
+		inCargoBay = False
+		detonationTime = 2
+		BallisticOverShootFactor = 0.699999988
+		CruiseAltitude = 500
+		CruiseSpeed = 300
+		CruisePredictionTime = 5
+		gpsSet = False
+		assignedGPSCoords = (0, 0, 0)
+		gpsTargetName = 
+		engageEnabled = True
+		engageRangeMin = 10
+		engageRangeMax = 5000
+		engageAir = True
+		engageMissile = True
+		engageGround = True
+		engageSLW = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			AgFire
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 5
+		Armor = 2
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
 }
 PART
 {
 	part = CanardController_4294092704
 	partName = Part
 	persistentId = 2290105481
-	pos = -1.26697683,2.99652481,-0.179427445
+	pos = -1.26896393,1.81892145,0.0250993967
 	attPos = 0,0,0
-	attPos0 = -1.2562356,0.444994152,-5.96046448E-08
+	attPos0 = -1.25621152,0.437425882,-5.96046448E-08
 	rot = 0.707106888,1.26440568E-07,-1.68587405E-07,0.707106769
 	attRot = 0,0,0,1
 	attRot0 = 1.19209275E-07,-2.98023188E-08,-2.08616257E-07,1
@@ -1928,7 +3340,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = CanardController_4293924108
+	sym = CanardController_4291672198
 	srfN = srfAttach,mk2Cockpit.Inline_4294723958
 	EVENTS
 	{
@@ -1975,15 +3387,53 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 750
+		Armor = 10
+		maxHitPoints = 750
+		ArmorThickness = 10
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = CanardController_4293924108
+	part = CanardController_4291672198
 	partName = Part
-	persistentId = 3534671982
-	pos = 1.24549437,2.99652481,-0.179427564
+	persistentId = 2652586660
+	pos = 1.24345911,1.81892145,0.0250993669
 	attPos = 0,0,0
-	attPos0 = 1.2562356,0.444994032,-5.96046448E-08
+	attPos0 = 1.25621152,0.437425852,-5.96046448E-08
 	rot = -1.99495986E-07,0.707106709,0.707106948,9.55319592E-08
 	attRot = 0,0,0,1
 	attRot0 = -2.08616243E-07,1,1.78813934E-07,-7.35136751E-08
@@ -2048,15 +3498,53 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 750
+		Armor = 10
+		maxHitPoints = 750
+		ArmorThickness = 10
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = sweptWing_4294150908
 	partName = Part
 	persistentId = 1793868715
-	pos = -1.26077747,2.99652481,-3.165277
+	pos = -1.26280105,1.81892121,-2.36521173
 	attPos = 0,0,0
-	attPos0 = -1.25003624,0.584148407,-2.3841848E-07
+	attPos0 = -1.25004864,1.17212117,0
 	rot = -1.26440554E-07,-0.707106769,-0.707106888,1.26440554E-07
 	attRot = 0,0,0,1
 	attRot0 = -1.78813934E-07,-1,-1.19209275E-07,0
@@ -2077,7 +3565,7 @@ PART
 	link = StandardCtrlSrf_4294011270
 	link = StandardCtrlSrf_4294017930
 	link = SmallGearBay_4293881460
-	sym = sweptWing_4293924012
+	sym = sweptWing_4291672056
 	srfN = srfAttach,mk2Fuselage_4294511322
 	EVENTS
 	{
@@ -2103,13 +3591,51 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 2400
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = StandardCtrlSrf_4294011270
 	partName = Part
 	persistentId = 2233162633
-	pos = -4.1905899,2.99652624,-5.25245333
+	pos = -4.19262505,1.81892335,-4.45239687
 	attPos = -0.127057791,0.0759108067,-4.58737986E-07
 	attPos0 = 2.92980075,-2.08717012,4.56053044E-07
 	rot = 0.687407851,-0.165743127,0.165742204,0.687407732
@@ -2129,7 +3655,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = StandardCtrlSrf_4293923968
+	sym = StandardCtrlSrf_4291671724
 	srfN = srfAttach,sweptWing_4294150908
 	EVENTS
 	{
@@ -2176,13 +3702,51 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = StandardCtrlSrf_4294017930
 	partName = Part
 	persistentId = 2563834447
-	pos = -2.40214014,2.99652553,-4.337008
+	pos = -2.40416813,1.8189224,-3.53694844
 	attPos = -0.210053682,0.102094173,-4.52495442E-07
 	attPos0 = 1.1413579,-1.17172647,1.97475259E-07
 	rot = 0.687407851,-0.165743127,0.165742204,0.687407732
@@ -2202,7 +3766,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = StandardCtrlSrf_4293923932
+	sym = StandardCtrlSrf_4291671764
 	srfN = srfAttach,sweptWing_4294150908
 	EVENTS
 	{
@@ -2249,15 +3813,53 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = sweptWing_4293924012
+	part = sweptWing_4291672056
 	partName = Part
-	persistentId = 342324534
-	pos = 1.23929501,2.99652481,-3.165277
+	persistentId = 2006867838
+	pos = 1.23729622,1.81892121,-2.36521173
 	attPos = 0,0,0
-	attPos0 = 1.25003624,0.584148407,-2.3841848E-07
+	attPos0 = 1.25004864,1.17212117,0
 	rot = -0.707107067,9.55318598E-08,-1.5734922E-07,-0.70710659
 	attRot = 0,0,0,1
 	attRot0 = -3.27825518E-07,-4.37114771E-08,-1.78813877E-07,-1
@@ -2275,9 +3877,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = StandardCtrlSrf_4293923968
-	link = StandardCtrlSrf_4293923932
-	link = SmallGearBay_4293875562
+	link = StandardCtrlSrf_4291671724
+	link = StandardCtrlSrf_4291671764
+	link = SmallGearBay_4291509750
 	sym = sweptWing_4294150908
 	srfN = srfAttach,mk2Fuselage_4294511322
 	EVENTS
@@ -2304,16 +3906,54 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 2400
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = StandardCtrlSrf_4293923968
+	part = StandardCtrlSrf_4291671724
 	partName = Part
-	persistentId = 613486618
-	pos = 4.16910553,2.99652576,-5.25245428
+	persistentId = 1674338339
+	pos = 4.16711807,1.81892288,-4.45239782
 	attPos = -0.127057791,0.0759108067,-4.58737986E-07
 	attPos0 = 2.92980075,-2.08717012,4.56053044E-07
-	rot = 0.165742114,0.687407732,0.687407851,-0.165743127
+	rot = 0.165742069,0.687407732,0.687407851,-0.165743083
 	attRot = 4.30136495E-08,-2.01478976E-08,0.707106769,0.707106829
 	attRot0 = 0.234395683,0.972141325,2.6481187E-08,6.2025839E-07
 	mir = 1,1,1
@@ -2331,7 +3971,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	sym = StandardCtrlSrf_4294011270
-	srfN = srfAttach,sweptWing_4293924012
+	srfN = srfAttach,sweptWing_4291672056
 	EVENTS
 	{
 	}
@@ -2377,16 +4017,54 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = StandardCtrlSrf_4293923932
+	part = StandardCtrlSrf_4291671764
 	partName = Part
-	persistentId = 3848974710
-	pos = 2.38065672,2.99652576,-4.33700895
+	persistentId = 289389887
+	pos = 2.37866259,1.8189224,-3.53694892
 	attPos = -0.210053682,0.102094173,-4.52495442E-07
 	attPos0 = 1.1413579,-1.17172647,1.97475259E-07
-	rot = 0.165742114,0.687407732,0.687407851,-0.165743127
+	rot = 0.165742069,0.687407732,0.687407851,-0.165743083
 	attRot = 4.30136495E-08,-2.01478976E-08,0.707106769,0.707106829
 	attRot0 = 0.234395683,0.972141325,2.6481187E-08,6.2025839E-07
 	mir = 1,1,1
@@ -2404,7 +4082,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	sym = StandardCtrlSrf_4294017930
-	srfN = srfAttach,sweptWing_4293924012
+	srfN = srfAttach,sweptWing_4291672056
 	EVENTS
 	{
 	}
@@ -2450,18 +4128,56 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = SmallGearBay_4293881460
 	partName = Part
 	persistentId = 8753786
-	pos = -1.86077762,2.73945022,-3.36527801
+	pos = -3.62376237,1.81892192,-3.70842171
 	attPos = -0.0331501365,0.0780986696,-0.0874224007
-	attPos0 = 0.633148134,-0.278099358,-0.169651657
-	rot = -3.20374966E-05,0.000118646189,2.19988578E-08,-1.00000012
-	attRot = -2.56957318E-08,-3.30311778E-08,-0.608761489,-0.79335326
-	attRot0 = -8.40064095E-05,-0.707129419,-0.707084239,-8.40374996E-05
+	attPos0 = 2.36095858,-1.34320784,1.56591369E-07
+	rot = -2.98023224E-07,0.0310718566,-8.56816769E-08,-0.999517262
+	attRot = -0.0504122153,0.0504119433,-0.705307662,-0.705307543
+	attRot0 = -0.0219713077,-0.706765532,-0.706765234,-0.021971181
 	mir = 1,1,1
 	symMethod = Mirror
 	autostrutMode = ForceHeaviest
@@ -2476,7 +4192,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = SmallGearBay_4293875562
+	sym = SmallGearBay_4291509750
 	srfN = srfAttach,sweptWing_4294150908
 	EVENTS
 	{
@@ -2516,6 +4232,7 @@ PART
 		isEnabled = True
 		springTweakable = 1
 		damperTweakable = 1
+		autoSpringDamper = True
 		suspensionPos = (-1, -1, -1)
 		autoBoost = 0
 		stagingEnabled = True
@@ -2732,18 +4449,56 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = SmallGearBay_4293875562
+	part = SmallGearBay_4291509750
 	partName = Part
-	persistentId = 1972615431
-	pos = 1.83929515,2.73945022,-3.36527872
-	attPos = -0.0331501961,0.0780982077,0.0874223411
-	attPos0 = 0.633148551,-0.278099507,0.169651836
-	rot = 3.20374966E-05,0.000118646203,2.19988578E-08,1.00000012
-	attRot = -2.56957318E-08,-3.30311778E-08,-0.608761489,-0.79335326
-	attRot0 = 0.707084417,-8.40065841E-05,8.40373323E-05,-0.70712924
+	persistentId = 2560539510
+	pos = 3.5982573,1.81892192,-3.7084229
+	attPos = -0.0331501365,0.0780986696,-0.0874224007
+	attPos0 = 2.36096001,-1.34320784,6.10240534E-07
+	rot = 3.57627869E-07,0.0310718529,-8.28877091E-08,0.999517262
+	attRot = -0.0504122153,0.0504119433,-0.705307662,-0.705307543
+	attRot0 = 0.704205394,-0.0639922097,-0.120449804,-0.696772337
 	mir = 1,1,1
 	symMethod = Mirror
 	autostrutMode = ForceHeaviest
@@ -2759,7 +4514,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	sym = SmallGearBay_4293881460
-	srfN = srfAttach,sweptWing_4293924012
+	srfN = srfAttach,sweptWing_4291672056
 	EVENTS
 	{
 	}
@@ -2798,6 +4553,7 @@ PART
 		isEnabled = True
 		springTweakable = 1
 		damperTweakable = 1
+		autoSpringDamper = True
 		suspensionPos = (-1, -1, -1)
 		autoBoost = 0
 		stagingEnabled = True
@@ -3014,73 +4770,18 @@ PART
 		{
 		}
 	}
-}
-PART
-{
-	part = SmallGearBay_4293866028
-	partName = Part
-	persistentId = 3930707252
-	pos = -0.0119014755,2.637079,0.968601644
-	attPos = 0,2.79954481,-0.370555043
-	attPos0 = -0.00116027147,-1.20652318,0.730000615
-	rot = -2.38418579E-07,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = -0.707107008,0,0,0.70710665
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = ForceHeaviest
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,mk2Cockpit.Inline_4294723958
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
 	MODULE
 	{
-		name = ModuleWheelBase
+		name = HitpointTracker
 		isEnabled = True
-		wheelType = FREE
-		isGrounded = False
-		autoFriction = True
-		frictionMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActAutoFrictionToggle
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelSuspension
-		isEnabled = True
-		springTweakable = 1
-		damperTweakable = 1
-		suspensionPos = (-1, -1, -1)
-		autoBoost = 0
+		Hitpoints = 200
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3094,50 +4795,8 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleWheelSteering
-		isEnabled = True
-		steeringEnabled = True
-		steeringInvert = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			SteeringToggle
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelBrakes
-		isEnabled = True
-		brakeTweakable = 100
-		brakeInput = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			BrakeAction
-			{
-				actionGroup = Brakes
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStatusLight
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3148,218 +4807,5 @@ PART
 		UPGRADESAPPLIED
 		{
 		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		isEnabled = True
-		shieldedCanDeploy = False
-		stateDisplayString = 已展开
-		stateString = Deployed
-		stagingEnabled = True
-		position = 1
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = Gear
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleConstrainPosition
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleLight
-		isEnabled = True
-		isOn = False
-		uiWriteLock = False
-		lightR = 1
-		lightG = 1
-		lightB = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleLightAction
-			{
-				actionGroup = Light
-			}
-			LightOnAction
-			{
-				actionGroup = None
-			}
-			LightOffAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDamage
-		isEnabled = True
-		isDamaged = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = airScoop_4293909386
-	partName = Part
-	persistentId = 795975969
-	pos = -0.010741204,2.00936961,1.82382703
-	attPos = 0,0,0
-	attPos0 = 0,0.260745168,0.987153709
-	rot = -0.0336220562,0,0,0.999434829
-	attRot = 0,0,0,1
-	attRot0 = -0.730481446,0,0,0.682932675
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,mk2SpacePlaneAdapter_4294580426
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = IntakeAir
-		amount = 2
-		maxAmount = 2
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
 	}
 }

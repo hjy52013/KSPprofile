@@ -8,7 +8,7 @@ GAME
 	Mode = CAREER
 	Status = 1
 	Seed = 1624694991
-	scene = 7
+	scene = 5
 	editor = None
 	flag = Squad/Flags/NASA
 	launchID = 105
@@ -242,13 +242,13 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 192432466.63925466
+		update = 192460334.88122723
 		version = 1.5.1
 		WEIGHTS
 		{
 			TourismContract = 10
 			SurveyContract = 10
-			StationContract = 13
+			StationContract = 11
 			SentinelContract = 52
 			SatelliteContract = 10
 			ISRUContract = 10
@@ -273,7 +273,7 @@ GAME
 			Duna = 10
 			Eve = 10
 			Moho = 30
-			Minmus = 12
+			Minmus = 10
 			Mun = 11
 			Kerbin = 10
 			Sun = 10
@@ -306,6 +306,43 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 4b370a42-1ce8-4581-a955-84563823d337
+				type = RecoverAsset
+				prestige = 0
+				seed = -1355671488
+				state = Offered
+				viewed = Read
+				agent = 探测动力有限公司
+				agentName = Probodobodyne Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,26000,59400,26000,0,10.8,10.8,192503364.161136,0,0,0
+				targetBody = 1
+				kerbalName = Jebediah Kerman
+				partName = arie73
+				partID = 0
+				recoveryLocation = 1
+				recoveryType = 2
+				PARAM
+				{
+					name = AcquirePart
+					state = Incomplete
+					values = 6600,0,0,4,0
+					title = 获得单位 W2-0GQ
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverPart
+					state = Incomplete
+					values = 0,0,0,0,0
+					title = 在Kerbin回收单位 W2-0GQ
+					failOn = AnyCandidate
+					winOn = AllCandidates
+				}
+			}
+			CONTRACT
+			{
 				guid = b76852d0-26a7-41e2-9548-997568574d24
 				type = PlantFlag
 				prestige = 0
@@ -328,27 +365,690 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = b8fd7651-f98c-41bc-b844-6cc9c732c8f3
+				guid = f3b49f6f-4b93-4eac-a4dc-4addd0838496
 				type = ExplorationContract
 				prestige = 0
-				seed = 620715385
+				seed = 1913061296
 				state = Active
 				viewed = Read
-				agent = C7航天部门
-				agentName = C7 Aerospace Division
+				agent = Kerbin世界第一纪录保持协会
+				agentName = Kerbin World-Firsts Record-Keeping Society
 				deadlineType = None
 				expiryType = Floating
 				ignoresWeight = True
-				values = 86400,0,33600,62400,33600,2,4,0,180980152.730819,180893795.170842,0,0
+				values = 129600,0,44800,83200,44800,3,6,0,192589810.48116,192460210.48116,0,0
 				targetBody = 5
-				bodyRatio = 0.368421048
+				bodyRatio = 0.421052635
 				PARAM
 				{
 					name = ProgressTrackingParameter
 					state = Incomplete
-					values = 96000,0,2,4,0
+					values = 128000,0,3,6,0
 					targetBody = 5
-					targetType = SPACEWALK
+					targetType = ORBITRETURN
+				}
+			}
+			CONTRACT
+			{
+				guid = f88b17be-9177-4500-9eb7-aa28b7663193
+				type = StationContract
+				prestige = 0
+				seed = -1177967013
+				state = Offered
+				viewed = Read
+				agent = STEADLER工程公司
+				agentName = STEADLER Engineering Corps
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,128822400,63366.3368225098,172574.250102928,67199.9969482422,0,19.04572,9.900001,192540477.459303,0,0,0
+				targetBody = 2
+				capacity = 5
+				contextual = False
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = 空间站
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = 拥有一根天线|拥有一个对接口|能够发电
+					launchID = 0
+				}
+				PARAM
+				{
+					name = CrewCapacityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetCapacity = 5
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 2
+					targetSituation = ORBITING
+					noun = 空间站
+					finalObjective = False
+				}
+			}
+			CONTRACT
+			{
+				guid = b29df774-11f3-4838-8099-8816cfdc5568
+				type = CollectScience
+				prestige = 1
+				seed = -1177967011
+				state = Offered
+				viewed = Read
+				agent = 极限火箭集团
+				agentName = Rockomax Conglomerate
+				deadlineType = Floating
+				expiryType = Floating
+				values = 69509.2502357685,185068378.752734,69839.0859138289,187788.094691899,75426.2140457459,4,9.419896,4,192501986.709539,0,0,0
+				body = 5
+				location = Surface
+				PARAM
+				{
+					name = CollectScience
+					state = Incomplete
+					values = 0,0,0,0,0
+					body = 5
+					location = Surface
+				}
+			}
+			CONTRACT
+			{
+				guid = 0af27e50-bbb9-435e-8977-084ba5f6cf14
+				type = ISRUContract
+				prestige = 1
+				seed = -1469086631
+				state = Offered
+				viewed = Read
+				agent = OPT Aerospace Division
+				agentName = OPT Aerospace Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,322056000,382606,975031,382606,0,54,28,192587251.935798,0,0,0
+				targetBody = 7
+				gatherGoal = 1000
+				targetResource = Ore
+				resourceTitle = 矿石
+				isDelivering = True
+				deliveryBody = 6
+				deliverySituation = LANDED
+				PARAM
+				{
+					name = ResourceExtractionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 7
+					totalHarvested = 0
+					goalHarvested = 1000
+					resourceName = Ore
+					resourceTitle = 矿石
+					notifyLevel = 0.25
+					modules = ModuleResourceHarvester
+				}
+				PARAM
+				{
+					name = ResourcePossessionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					goalResource = 1000
+					resourceName = Ore
+					resourceTitle = 矿石
+					vesselName = 航天器
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 6
+					targetSituation = LANDED
+					noun = 矿石
+					finalObjective = False
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = e68f0d6d-cc88-483e-9c49-35780185e3e0
+				type = SurveyContract
+				prestige = 1
+				seed = -1177967007
+				state = Offered
+				viewed = Read
+				agent = OPT Propulsion Science Division
+				agentName = OPT Propulsion Science Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 47520.0010299683,101217602.193832,75000,132500,75000,0,10,10,192479997.460333,0,0,0
+				targetBody = 2
+				centerLatitude = -51.03144155647378
+				centerLongitude = 108.38193003478551
+				dataName = 地震
+				anomalyName = 干扰
+				reportName = 读数
+				locationName = 区域 L-GW附近的Mun
+				focusedSurvey = False
+				targetBand = GROUND
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 22000,0,4,4,0
+					targetBody = 2
+					actionDescription = 获取地震仪读数
+					experiment = seismicScan
+					flightThreshold = 10100
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = -1581344954
+					wpIndex = 0
+					wpTexture = seismic
+					wpLatitude = -50.610601692190457
+					wpLongitude = 107.77852487515663
+					wpLandlocked = False
+					wpNavigationId = f1e7c549-6d9d-4edc-b839-d2cbc721766d
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 22000,0,4,4,0
+					targetBody = 2
+					actionDescription = 获取地震仪读数
+					experiment = seismicScan
+					flightThreshold = 10600
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = -1581344954
+					wpIndex = 1
+					wpTexture = seismic
+					wpLatitude = -51.180552942316417
+					wpLongitude = 108.73562675215139
+					wpLandlocked = False
+					wpNavigationId = 0d70c92b-e095-48d4-8c0c-5b2a5fcd7261
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 22000,0,4,4,0
+					targetBody = 2
+					actionDescription = 获取地震仪读数
+					experiment = seismicScan
+					flightThreshold = 10300
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = -1581344954
+					wpIndex = 2
+					wpTexture = seismic
+					wpLatitude = -50.740211691402941
+					wpLongitude = 108.19425078782059
+					wpLandlocked = False
+					wpNavigationId = 2929c05e-d1e1-412f-9627-ab5a9cd19805
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 22000,0,4,4,0
+					targetBody = 2
+					actionDescription = 获取地震仪读数
+					experiment = seismicScan
+					flightThreshold = 10500
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = -1581344954
+					wpIndex = 3
+					wpTexture = seismic
+					wpLatitude = -51.09412857490328
+					wpLongitude = 108.39233089807425
+					wpLandlocked = False
+					wpNavigationId = 952f8355-716d-463e-87c4-18f51f88f78b
+				}
+			}
+			CONTRACT
+			{
+				guid = 79c3aa58-1127-489b-a647-c19974c2924d
+				type = StationContract
+				prestige = 1
+				seed = -1177967010
+				state = Offered
+				viewed = Read
+				agent = 近点火箭供应公司
+				agentName = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,386467200,264000,684750,264000,0,29,15,192518877.459303,0,0,0
+				targetBody = 13
+				capacity = 5
+				contextual = False
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = 空间站
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = 拥有一根天线|拥有一个对接口|能够发电
+					launchID = 0
+				}
+				PARAM
+				{
+					name = CrewCapacityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetCapacity = 5
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = 观景穹顶舱
+					vesselDescription = 空间站
+					partNames = cupola
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 13
+					targetSituation = ORBITING
+					noun = 空间站
+					finalObjective = False
+				}
+			}
+			CONTRACT
+			{
+				guid = c04b49d7-a6ad-44ba-a130-19d5d31e2f9c
+				type = PartTest
+				prestige = 2
+				seed = -1177966998
+				state = Offered
+				viewed = Read
+				agent = Kerbin Rover
+				agentName = Kerbin Rover
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,147150.004506111,423056.254184246,169222.501673698,9,13.35795,13.02326,192475677.459303,0,0,0
+				part = liquidEngine2
+				haul = False
+				dest = 5
+				sit = SUB_ORBITAL
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = liquidEngine2
+					body = Eve
+					situation = SUB_ORBITAL
+					uniqueID = 0.33083963735533861
+					haul = False
+					repeatability = ONCEPERPART
+					notes = 如需进行测试，确认所有测试条件就绪后，在分级队列中启动该部件。
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 5
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SUB_ORBITAL
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 200000
+						maxAlt = 210000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 50d30882-4a2e-4e39-8c1e-f1cc42c91619
+				type = ARMContract
+				prestige = 2
+				seed = -1177966989
+				state = Offered
+				viewed = Read
+				agent = 巴哈姆特动力
+				agentName = Bahamuto Dynamics
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,322056000,586165.076494217,1758495.19302544,694312.485605478,42,80.34,44.2,192518877.459303,0,0,0
+				targetBody = 6
+				asteroidClass = D
+				isLanding = False
+				PARAM
+				{
+					name = AsteroidParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					forStation = False
+					asteroidClass = D
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 6
+					targetSituation = ORBITING
+					noun = 航天器
+					finalObjective = False
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 9952c258-a7aa-4c14-a09d-545fcf1e3f45
+				type = ISRUContract
+				prestige = 2
+				seed = -1177966984
+				state = Offered
+				viewed = Read
+				agent = C7航天部门
+				agentName = C7 Aerospace Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,128822400,200604,587897.237811685,230694.595217228,0,60.86957,36,192497277.459303,0,0,0
+				targetBody = 2
+				gatherGoal = 2300
+				targetResource = Ore
+				resourceTitle = 矿石
+				isDelivering = True
+				deliveryBody = 1
+				deliverySituation = LANDED
+				PARAM
+				{
+					name = ResourceExtractionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 2
+					totalHarvested = 0
+					goalHarvested = 2300
+					resourceName = Ore
+					resourceTitle = 矿石
+					notifyLevel = 0.25
+					modules = ModuleResourceHarvester
+				}
+				PARAM
+				{
+					name = ResourcePossessionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					goalResource = 2300
+					resourceName = Ore
+					resourceTitle = 矿石
+					vesselName = 航天器
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					targetSituation = LANDED
+					noun = 矿石
+					finalObjective = False
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 59f2ab76-16a4-413c-818e-6dee81f454be
+				type = SurveyContract
+				prestige = 2
+				seed = -1177966988
+				state = Offered
+				viewed = Read
+				agent = 实验工程集团
+				agentName = Experimental Engineering Group
+				deadlineType = Floating
+				expiryType = Floating
+				values = 62912.6243591309,268007779.769897,278099.992275238,565006.472592116,310499.993562698,0,12.17391,14,192495390.083662,0,0,0
+				targetBody = 13
+				centerLatitude = -65.393879217091097
+				centerLongitude = -141.60265192464118
+				dataName = 地震
+				anomalyName = 干扰
+				reportName = 读数
+				locationName = 地区 H-6C附近的Gilly
+				focusedSurvey = False
+				targetBand = GROUND
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 79200,0,4,4,0
+					targetBody = 13
+					actionDescription = 获取地震仪读数
+					experiment = seismicScan
+					flightThreshold = 6700
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = -1339000023
+					wpIndex = 0
+					wpTexture = seismic
+					wpLatitude = -61.222196397811082
+					wpLongitude = -148.66994471837305
+					wpLandlocked = False
+					wpNavigationId = 249aa7f9-3dd3-4833-bd68-3d43e56823d6
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 79200,0,4,4,0
+					targetBody = 13
+					actionDescription = 获取地震仪读数
+					experiment = seismicScan
+					flightThreshold = 7200
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = -1339000023
+					wpIndex = 1
+					wpTexture = seismic
+					wpLatitude = -63.837124747896887
+					wpLongitude = -131.90057396268836
+					wpLandlocked = False
+					wpNavigationId = d82220f5-bf61-4fa5-9be9-129463ee5d8f
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 79200,0,4,4,0
+					targetBody = 13
+					actionDescription = 获取地震仪读数
+					experiment = seismicScan
+					flightThreshold = 6600
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = -1339000023
+					wpIndex = 2
+					wpTexture = seismic
+					wpLatitude = -69.789842139411334
+					wpLongitude = -134.99629081780606
+					wpLandlocked = False
+					wpNavigationId = e1dd3428-5ce6-425d-85d1-1f16b3e93b30
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 79200,0,4,4,0
+					targetBody = 13
+					actionDescription = 获取地震仪读数
+					experiment = seismicScan
+					flightThreshold = 6800
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = -1339000023
+					wpIndex = 3
+					wpTexture = seismic
+					wpLatitude = -61.591726120145317
+					wpLongitude = -144.83505397630026
+					wpLandlocked = False
+					wpNavigationId = a8b35bcc-7362-4c98-ad46-c67ecc433eb2
+				}
+			}
+			CONTRACT
+			{
+				guid = 28fdc330-b53e-4ebb-b364-b646df582ea9
+				type = StationContract
+				prestige = 2
+				seed = -1177967005
+				state = Offered
+				viewed = Read
+				agent = 泽通电子
+				agentName = Zaltonic Electronics
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,322056000,406520.388708115,1212570.22217946,467498.43732213,33,33.0354,19.13044,192562077.459303,0,0,0
+				targetBody = 7
+				capacity = 9
+				contextual = False
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = 空间站
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = 拥有一根天线|拥有一个对接口|能够发电
+					launchID = 0
+				}
+				PARAM
+				{
+					name = CrewCapacityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetCapacity = 9
+				}
+				PARAM
+				{
+					name = ResourcePossessionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					goalResource = 5000
+					resourceName = Ore
+					resourceTitle = 矿石
+					vesselName = 空间站
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = 研究实验室
+					vesselDescription = 空间站
+					partNames = Large_Crewed_Lab
+					moduleNames = ModuleScienceLab
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = 观景穹顶舱
+					vesselDescription = 空间站
+					partNames = cupola
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 7
+					targetSituation = ORBITING
+					noun = 空间站
+					finalObjective = False
 				}
 			}
 			CONTRACT
@@ -406,870 +1106,7 @@ GAME
 					MinimumEccentricity = 0
 					MinimumInclination = 18.260137723625867
 					TotalDiscoveries = 17
-					RemainingDiscoveries = 7
-				}
-			}
-			CONTRACT
-			{
-				guid = a42c27b8-1cbb-4250-b5be-73beb4645044
-				type = StationContract
-				prestige = 0
-				seed = -161236753
-				state = Offered
-				viewed = Unseen
-				agent = STEADLER工程公司
-				agentName = STEADLER Engineering Corps
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,322056000,174257.426261902,474579.187783053,184799.991607666,0,24.33619,13.2,192540446.639244,0,0,0
-				targetBody = 6
-				capacity = 5
-				contextual = False
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = 空间站
-					mannedStatus = 2
-					requireNew = True
-					checkModuleTypes = Antenna|Generator|Dock
-					checkModuleDescriptions = 拥有一根天线|拥有一个对接口|能够发电
-					launchID = 0
-				}
-				PARAM
-				{
-					name = CrewCapacityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetCapacity = 5
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = a
-					partDescription = 观景穹顶舱
-					vesselDescription = 空间站
-					partNames = cupola
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 6
-					targetSituation = ORBITING
-					noun = 空间站
-					finalObjective = False
-				}
-			}
-			CONTRACT
-			{
-				guid = 9708f72b-12c5-4cdc-b24a-23a133312d56
-				type = ISRUContract
-				prestige = 1
-				seed = -161236748
-				state = Offered
-				viewed = Unseen
-				agent = 歌利亚国家制造厂
-				agentName = Goliath National Products
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,161028000,237753,666476.814445496,261528.305668473,0,61.81818,34,192540446.639244,0,0,0
-				targetBody = 3
-				gatherGoal = 1250
-				targetResource = Ore
-				resourceTitle = 矿石
-				isDelivering = True
-				deliveryBody = 1
-				deliverySituation = ORBITING
-				PARAM
-				{
-					name = ResourceExtractionParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 3
-					totalHarvested = 0
-					goalHarvested = 1250
-					resourceName = Ore
-					resourceTitle = 矿石
-					notifyLevel = 0.25
-					modules = ModuleResourceHarvester
-				}
-				PARAM
-				{
-					name = ResourcePossessionParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					goalResource = 1250
-					resourceName = Ore
-					resourceTitle = 矿石
-					vesselName = 航天器
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetSituation = ORBITING
-					noun = 矿石
-					finalObjective = False
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = 26b9df79-f2a3-4eb7-99c6-cc6b77f80247
-				type = TourismContract
-				prestige = 1
-				seed = -161236747
-				state = Offered
-				viewed = Unseen
-				agent = OPT Propulsion Science Division
-				agentName = OPT Propulsion Science Division
-				deadlineType = Floating
-				expiryType = Floating
-				values = 118800.002574921,253044005.484581,0,0,0,0,22.72727,10.90909,192551246.641819,0,0,0
-				preposition = 到<2>>附近
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Hula Kerman|Nayan Kerman|Dunmai Kerman|Geji Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 182812,0,0,0,0
-					kerbalName = Hula Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 6
-						targetType = Land
-						kerbalName = Hula Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 6
-						targetType = Orbit
-						kerbalName = Hula Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 6
-						targetType = Flight
-						kerbalName = Hula Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 182812,0,0,0,0
-					kerbalName = Nayan Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Nayan Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 7
-						targetType = Orbit
-						kerbalName = Nayan Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 7
-						targetType = Land
-						kerbalName = Nayan Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 121875,0,0,0,0
-					kerbalName = Dunmai Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 6
-						targetType = Flight
-						kerbalName = Dunmai Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 6
-						targetType = Orbit
-						kerbalName = Dunmai Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 182812,0,0,0,0
-					kerbalName = Geji Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 6
-						targetType = Flyby
-						kerbalName = Geji Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Geji Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 20312,0,0,0,0
-						targetBody = 6
-						targetType = Land
-						kerbalName = Geji Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 6b719282-9b51-4081-82ec-d31ed2b7b859
-				type = StationContract
-				prestige = 1
-				seed = -161236746
-				state = Offered
-				viewed = Unseen
-				agent = 近点火箭供应公司
-				agentName = Periapsis Rocket Supplies Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,161028000,132000,342375,132000,0,35,18,192562046.639244,0,0,0
-				targetBody = 3
-				capacity = 6
-				contextual = False
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = 空间站
-					mannedStatus = 2
-					requireNew = True
-					checkModuleTypes = Antenna|Generator|Dock
-					checkModuleDescriptions = 拥有一根天线|拥有一个对接口|能够发电
-					launchID = 0
-				}
-				PARAM
-				{
-					name = CrewCapacityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetCapacity = 6
-				}
-				PARAM
-				{
-					name = ResourcePossessionParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					goalResource = 2000
-					resourceName = Ore
-					resourceTitle = 矿石
-					vesselName = 空间站
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = a
-					partDescription = 观景穹顶舱
-					vesselDescription = 空间站
-					partNames = cupola
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 3
-					targetSituation = ORBITING
-					noun = 空间站
-					finalObjective = False
-				}
-			}
-			CONTRACT
-			{
-				guid = c7f981d1-325f-46e5-9828-ef538d9be9a6
-				type = RecoverAsset
-				prestige = 1
-				seed = -161236742
-				state = Offered
-				viewed = Unseen
-				agent = 弗拉伊德动力研究实验室
-				agentName = FLOOYD Dynamics Research Labs
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,35750,89842.5019472837,39325.0008523464,0,12.72727,14,192562046.639244,0,0,0
-				targetBody = 1
-				kerbalName = Yunyun Kerman
-				partName = M2X.DropshipCockpit
-				partID = 0
-				recoveryLocation = 2
-				recoveryType = 3
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 9075,0,0,6,0
-					title = 拯救Yunyun Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = AcquirePart
-					state = Incomplete
-					values = 9075,0,0,6,0
-					title = 获得Yunyun的残骸
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = 在Kerbin回收Yunyun Kerman
-					failOn = All
-					winOn = All
-				}
-				PARAM
-				{
-					name = RecoverPart
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = 在Kerbin回收Yunyun的残骸
-					failOn = AnyCandidate
-					winOn = AllCandidates
-				}
-			}
-			CONTRACT
-			{
-				guid = 22826876-1d30-40dc-a057-2a621c153f1c
-				type = SatelliteContract
-				prestige = 2
-				seed = -161236740
-				state = Offered
-				viewed = Unseen
-				agent = 歌利亚国家制造厂
-				agentName = Goliath National Products
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,92016000,60858,179341.346281886,69986.6985490322,16,15.65217,9,192562046.639244,0,0,0
-				targetBody = 2
-				deviation = 3
-				orbitType = 6
-				placementMode = 0
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = 探测器
-					mannedStatus = 1
-					requireNew = True
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = 拥有一根天线|能够发电
-					launchID = 0
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 2
-					deviationWindow = 3
-					orbitType = 6
-					inclination = 39.071256589773789
-					eccentricity = 0.36842756447286235
-					sma = 985015.18195733381
-					lan = 278.95282993044367
-					argumentOfPeriapsis = 288.79937630556498
-					meanAnomalyAtEpoch = -1.2815249755562796
-					epoch = 0
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = a
-					partDescription = 资源测量扫描器
-					vesselDescription = 卫星
-					partNames = SurveyScanner
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = a
-					partDescription = 引力子探测器
-					vesselDescription = 卫星
-					partNames = sensorGravimeter
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = a
-					partDescription = 神秘黏液单元
-					vesselDescription = 卫星
-					partNames = GooExperiment
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = 4e89181f-95e1-4c15-8cd8-5b90493a6b7d
-				type = SurveyContract
-				prestige = 2
-				seed = -161236738
-				state = Offered
-				viewed = Unseen
-				agent = 探测动力有限公司
-				agentName = Probodobodyne Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,230040000,90000,159000,90000,0,7.44,7.44,192497246.639244,0,0,0
-				targetBody = 6
-				centerLatitude = 0.28061782636196164
-				centerLongitude = -25.464575885959015
-				dataName = 大气
-				anomalyName = 异常
-				reportName = 读数
-				locationName = duna地表实验室附近的Duna
-				focusedSurvey = False
-				targetBand = LOW
-				contextual = True
-				vesselName = duna地表实验室
-				cardinalName = 东
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 27000,0,3,3,0
-					targetBody = 6
-					actionDescription = 进行大气分析
-					experiment = atmosphereAnalysis
-					flightThreshold = 12900
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = True
-					bouncesLeft = 4
-					bounceOriginLatitude = 0.28061782636196164
-					bounceOriginLongitude = -25.464575885959015
-					wpSeed = -56312973
-					wpIndex = 0
-					wpTexture = balloon
-					wpLatitude = -10.357993766380211
-					wpLongitude = 27.387223176810309
-					wpLandlocked = False
-					wpNavigationId = 37b31a29-18d1-47db-bf2a-478dedcd6227
-				}
-			}
-			CONTRACT
-			{
-				guid = c0f6d706-1e5e-4898-991e-fb0d2ccc1899
-				type = ARMContract
-				prestige = 2
-				seed = -161236737
-				state = Offered
-				viewed = Unseen
-				agent = 火箭联合公司
-				agentName = Rokea Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 65375.3035986394,48737288.8327857,147411.605141723,442234.806256735,151360.12649703,42,64.95413,34,192497821.942843,0,0,0
-				targetBody = 1
-				asteroidClass = D
-				isLanding = False
-				PARAM
-				{
-					name = AsteroidParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					forStation = False
-					asteroidClass = D
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetSituation = ORBITING
-					noun = 航天器
-					finalObjective = False
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = f6cecd97-5c73-4c7f-88e2-953e299a162d
-				type = TourismContract
-				prestige = 2
-				seed = -161236725
-				state = Offered
-				viewed = Unseen
-				agent = Insanity Aerospace
-				agentName = Insanity Aerospace
-				deadlineType = Floating
-				expiryType = Floating
-				values = 112695.656204224,200034789.762497,0,0,0,0,34.5,17.25,192545142.295448,0,0,0
-				preposition = 太阳系
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Libei Kerman|Wuban Kerman|Maogai Kerman|Dailang Kerman|Luling Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 292500,0,0,0,0
-					kerbalName = Libei Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 2
-						targetType = Flyby
-						kerbalName = Libei Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 6
-						targetType = Flyby
-						kerbalName = Libei Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Libei Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Land
-						kerbalName = Libei Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 219375,0,0,0,0
-					kerbalName = Wuban Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Wuban Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 3
-						targetType = Orbit
-						kerbalName = Wuban Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Wuban Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 292500,0,0,0,0
-					kerbalName = Maogai Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 5
-						targetType = Flyby
-						kerbalName = Maogai Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 6
-						targetType = Flight
-						kerbalName = Maogai Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Maogai Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Maogai Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 292500,0,0,0,0
-					kerbalName = Dailang Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 5
-						targetType = Flyby
-						kerbalName = Dailang Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Dailang Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Orbit
-						kerbalName = Dailang Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 6
-						targetType = Land
-						kerbalName = Dailang Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 292500,0,0,0,0
-					kerbalName = Luling Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 6
-						targetType = Orbit
-						kerbalName = Luling Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Luling Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 6
-						targetType = Flyby
-						kerbalName = Luling Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Luling Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = ed788666-0170-4768-842b-2d99e21ddfd7
-				type = PartTest
-				prestige = 2
-				seed = -161236723
-				state = Offered
-				viewed = Unseen
-				agent = Sean罐头厂
-				agentName = Sean's Cannery
-				deadlineType = Floating
-				expiryType = Floating
-				values = 39633.0267906189,21104586.7660046,110362.503379583,317292.190638184,116437.497586012,14,23.47826,21,192472079.666035,0,0,0
-				part = GearLarge
-				haul = False
-				dest = 3
-				sit = LANDED
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = GearLarge
-					body = Minmus
-					situation = LANDED
-					uniqueID = 0.2535185721952089
-					haul = False
-					repeatability = ONCEPERPART
-					notes = 如需进行测试，确认所有测试条件就绪后，在部件的信息菜单中点击[运行测试]选项。
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 3
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = LANDED
-						title = 
-					}
+					RemainingDiscoveries = 10
 				}
 			}
 			CONTRACT_FINISHED
@@ -7450,6 +7287,32 @@ GAME
 					finalObjective = False
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = b8fd7651-f98c-41bc-b844-6cc9c732c8f3
+				type = ExplorationContract
+				prestige = 0
+				seed = 620715385
+				state = Completed
+				viewed = Read
+				agent = C7航天部门
+				agentName = C7 Aerospace Division
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 86400,0,33600,62400,33600,2,4,0,180980152.730819,180893795.170842,0,0
+				targetBody = 5
+				bodyRatio = 0.368421048
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 5
+					targetType = SPACEWALK
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -7462,7 +7325,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 21887649.780629855
+		funds = 22117249.780629855
 	}
 	SCENARIO
 	{
@@ -7983,7 +7846,7 @@ GAME
 				reached = 164035310.99282601
 				Orbit
 				{
-					completedUnmanned = 178020265.18588609
+					completed = 178020265.18588609
 					vessel
 					{
 						name = 小型中继卫星发射火箭
@@ -8007,9 +7870,17 @@ GAME
 						crews = Lunduo Kerman, Tanwai Kerman, Duzong Kerman
 					}
 				}
+				Spacewalk
+				{
+					completed = 192460164.16113564
+					crew
+					{
+						crews = Jiedai Kerman
+					}
+				}
 				Flight
 				{
-					completedUnmanned = 180893752.6908192
+					completed = 180893752.6908192
 					vessel
 					{
 						name = 小型中继卫星发射火箭
@@ -8018,7 +7889,7 @@ GAME
 				}
 				Suborbit
 				{
-					completedUnmanned = 180709756.49715036
+					completed = 180709756.49715036
 					vessel
 					{
 						name = 小型中继卫星发射火箭
@@ -8338,7 +8209,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 305.266968
+		sci = 807.399536
 		Tech
 		{
 			id = start
@@ -8678,6 +8549,90 @@ GAME
 			part = towLauncherTurret
 			part = bahaTowMissile
 			part = missileController
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
+			part = HellfireEMP
+			part = bahaM1Abrams
+			part = bahaM1Abrams
 			part = HellfireEMP
 			part = bahaM1Abrams
 			part = bahaM1Abrams
@@ -11300,7 +11255,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 874.522888
+		rep = 874.903809
 	}
 	SCENARIO
 	{
@@ -11587,7 +11542,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 1828979524
+		lastSeed = 2042506656
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -11645,12 +11600,12 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 192446731.2192201
+		NextSpawnTime = 192468120.99015114
 	}
 	FLIGHTSTATE
 	{
 		version = 1.5.1
-		UT = 192432471.77925742
+		UT = 192460335.28122744
 		activeVessel = 30
 		mapViewFiltering = 16383
 		commNetUIModeTracking = Network
@@ -11692,13 +11647,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
-				INC = 2.7970060097340661
+				INC = 2.7970060097315899
 				LPE = 270
-				LAN = 53.162051514043753
+				LAN = 190.95186079505712
 				MNA = 0
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 2
 			}
 			PART
@@ -11869,11 +11824,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 3.8630090403586101
+				INC = 3.8630090403334942
 				LPE = 270
-				LAN = 81.393402059532036
+				LAN = 111.18355499980976
 				MNA = 0
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 3
 			}
 			PART
@@ -12042,13 +11997,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
-				INC = 0.070032832010381699
+				INC = 0.070032831994769104
 				LPE = 90
-				LAN = 311.34631212650538
+				LAN = 89.136121407127177
 				MNA = 0
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 2
 			}
 			PART
@@ -16791,13 +16746,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
+				SMA = 101505.11421227541
+				ECC = 0.99999999999999989
 				INC = 0.065745272184180845
 				LPE = 90
-				LAN = 311.34496830187362
-				MNA = 0
-				EPH = 188376591.70406395
+				LAN = 89.134777582802712
+				MNA = 3.1415926207170166
+				EPH = 192460334.82122719
 				REF = 2
 			}
 			PART
@@ -16966,13 +16921,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101505.06367997515
+				SMA = 101505.06368005976
 				ECC = 0.99999999999999989
-				INC = 0.066719166456809642
+				INC = 0.066719166451346984
 				LPE = 90
-				LAN = 311.34471879225617
+				LAN = 89.134528073130639
 				MNA = 3.1415926207170166
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 2
 			}
 			PART
@@ -21465,13 +21420,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
-				INC = 6.1900844749961674
+				SMA = 30001.929189079681
+				ECC = 0.99999999999999978
+				INC = 6.1900844753776187
 				LPE = 270
-				LAN = 317.84330652640119
-				MNA = 0
-				EPH = 188376591.70406395
+				LAN = 347.63345946638026
+				MNA = 3.1415926303452304
+				EPH = 192460334.82122719
 				REF = 3
 			}
 			PART
@@ -25860,13 +25815,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 6.2014741770482651
+				SMA = 30000.169174037259
+				ECC = 0.99999999999999989
+				INC = 6.2014741770088122
 				LPE = 270
-				LAN = 317.83434227850728
-				MNA = 0
-				EPH = 188376591.70406395
+				LAN = 347.62449521819167
+				MNA = 3.1415926207170166
+				EPH = 192460334.82122719
 				REF = 3
 			}
 			PART
@@ -28127,9 +28082,9 @@ GAME
 				ECC = 1
 				INC = 0.099893807689317132
 				LPE = 90
-				LAN = 307.43640854103967
+				LAN = 66.318511879963125
 				MNA = 0
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 6
 			}
 			PART
@@ -32604,36 +32559,36 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 111720199.29540074
+			met = 115856524.47142968
 			lct = 76576964.672359943
-			lastUT = 188297163.96776068
+			lastUT = 192433489.14378962
 			distanceTraveled = 6461719.1093120091
 			root = 0
-			lat = 0.28061782636196164
-			lon = -25.464575885959015
-			alt = 1029.8369879404781
-			hgt = 10.7743015
-			nrm = 0.00348475575,0.99998033,-0.00523915887
-			rot = -0.698660433,-0.587348521,-0.0767621696,0.401251674
-			CoM = -0.00505244732,-6.51000595,-0.000420570374
+			lat = 0.28061463230244793
+			lon = -25.464567196491277
+			alt = 1029.8832029014011
+			hgt = 10.7947006
+			nrm = 0.0028642267,0.999989688,-0.00355315208
+			rot = -0.698851168,-0.587528765,-0.0774151683,0.400529683
+			CoM = -0.00510334969,-6.50997257,-0.000386714935
 			stg = 2
 			prst = False
 			ref = 859682905
 			ctrl = True
 			PQSMin = 2
 			PQSMax = 8
-			cPch = 0.2051879
-			cHdg = -1.156126
+			cPch = 0.3339399
+			cHdg = -0.25001
 			cMod = 0
 			ORBIT
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 0.28060887848151805
+				INC = 0.2806065353413898
 				LPE = 270
-				LAN = 44.570736720099035
+				LAN = 163.45284656181639
 				MNA = 0
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 6
 			}
 			PART
@@ -32661,9 +32616,9 @@ GAME
 				attN = top, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 246.70964150165133
-				tempExt = 246.84588035227117
-				tempExtUnexp = 246.84556533412959
+				temp = 246.86514332029415
+				tempExt = 246.67526843822461
+				tempExtUnexp = 246.67511839007119
 				expt = 0
 				state = 0
 				attached = True
@@ -33406,7 +33361,7 @@ GAME
 							markUT = 76576964.672359943
 							deltaVExpended = NaN
 							dragLosses = NaN
-							gravityLosses = -1136.1264498544867
+							gravityLosses = -1136.1220282863526
 							steeringLosses = NaN
 							markLAN = 246.06900482177736
 							markLatitude = -0.097089934521761873
@@ -33461,7 +33416,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.89940142631530762
+					amount = 4.2441411018371582
 					maxAmount = 15
 					flowState = True
 					isTweakable = True
@@ -33495,9 +33450,9 @@ GAME
 				attN = bottom, 0
 				mass = 0.0500000007
 				shielded = False
-				temp = 246.55297546477991
-				tempExt = 246.75142571141944
-				tempExtUnexp = 246.75115078467115
+				temp = 245.24815312934439
+				tempExt = 245.72824608775997
+				tempExtUnexp = 245.72800911122781
 				expt = 0.5
 				state = 0
 				attached = True
@@ -33622,9 +33577,9 @@ GAME
 				attN = bottom, 7
 				mass = 0.100000001
 				shielded = False
-				temp = 246.65725447194291
-				tempExt = 246.88535324378566
-				tempExtUnexp = 246.88495882913855
+				temp = 246.91290617769715
+				tempExt = 247.0067988953966
+				tempExtUnexp = 247.00669968939798
 				expt = 0.5
 				state = 0
 				attached = True
@@ -33707,9 +33662,9 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.100000001
 				shielded = False
-				temp = 246.64314728189808
-				tempExt = 246.77773266352438
-				tempExtUnexp = 246.77740106974318
+				temp = 246.79447130498045
+				tempExt = 246.87032759838979
+				tempExtUnexp = 246.87019881946458
 				expt = 0.5
 				state = 0
 				attached = True
@@ -33866,9 +33821,9 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.100000001
 				shielded = False
-				temp = 246.64314728189808
-				tempExt = 246.77773266352438
-				tempExtUnexp = 246.77740106974318
+				temp = 246.79447130498045
+				tempExt = 246.87032759838979
+				tempExtUnexp = 246.87019881946458
 				expt = 0.5
 				state = 0
 				attached = True
@@ -34025,9 +33980,9 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.100000001
 				shielded = False
-				temp = 246.64314728189808
-				tempExt = 246.77773266352438
-				tempExtUnexp = 246.77740106974318
+				temp = 246.79447130498045
+				tempExt = 246.87032759838979
+				tempExtUnexp = 246.87019881946458
 				expt = 0.5
 				state = 0
 				attached = True
@@ -34184,9 +34139,9 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.100000001
 				shielded = False
-				temp = 246.64314728189808
-				tempExt = 246.77773266352438
-				tempExtUnexp = 246.77740106974318
+				temp = 246.79447130498045
+				tempExt = 246.87032759838979
+				tempExtUnexp = 246.87019881946458
 				expt = 0.5
 				state = 0
 				attached = True
@@ -34342,9 +34297,9 @@ GAME
 				attN = bottom, 8
 				mass = 0.200000003
 				shielded = False
-				temp = 246.63168479755063
-				tempExt = 246.62001716415909
-				tempExtUnexp = 246.61958299551486
+				temp = 247.05396704956752
+				tempExt = 247.08929016980505
+				tempExtUnexp = 247.08917901656034
 				expt = 0.5
 				state = 0
 				attached = True
@@ -34403,7 +34358,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 239.8403804657942
+					amount = 1131.7709432059696
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -34437,9 +34392,9 @@ GAME
 				attN = bottom, 9
 				mass = 0.200000003
 				shielded = False
-				temp = 246.63518581549582
-				tempExt = 246.42337998564153
-				tempExtUnexp = 246.42265681813126
+				temp = 247.130376885419
+				tempExt = 247.12649967264468
+				tempExtUnexp = 247.12640164178646
 				expt = 0.5
 				state = 0
 				attached = True
@@ -34558,9 +34513,9 @@ GAME
 				attN = bottom, 21
 				mass = 0.300000012
 				shielded = False
-				temp = 246.65745061764636
-				tempExt = 245.96488386792879
-				tempExtUnexp = 245.96400423191383
+				temp = 247.39293334430764
+				tempExt = 247.0914278307495
+				tempExtUnexp = 247.09134116458614
 				expt = 0.5
 				state = 0
 				attached = True
@@ -34583,9 +34538,9 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					aniState = LOCKED
-					animSwitch = True
-					animTime = 0
-					animSpeed = -1
+					animSwitch = False
+					animTime = 1
+					animSpeed = 1
 					deployPercent = 100
 					animationIsDisabled = False
 					stagingEnabled = True
@@ -34711,10 +34666,10 @@ GAME
 				attN = top, -1
 				attN = bottom, 9
 				mass = 0.200000003
-				shielded = True
-				temp = 246.72796323170365
-				tempExt = 246.72896286617413
-				tempExtUnexp = 4
+				shielded = False
+				temp = 247.80649853909415
+				tempExt = 247.60873116049095
+				tempExtUnexp = 247.60872557373818
 				expt = 0.5
 				state = 0
 				attached = True
@@ -34737,9 +34692,9 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					aniState = LOCKED
-					animSwitch = True
-					animTime = 0
-					animSpeed = -1
+					animSwitch = False
+					animTime = 1
+					animSpeed = 1
 					deployPercent = 100
 					animationIsDisabled = False
 					stagingEnabled = True
@@ -34762,7 +34717,7 @@ GAME
 					name = ModuleScienceExperiment
 					isEnabled = True
 					Deployed = True
-					Inoperable = False
+					Inoperable = True
 					cooldownToGo = 0
 					stagingEnabled = True
 					EVENTS
@@ -34777,17 +34732,8 @@ GAME
 						ResetAction
 						{
 							actionGroup = None
+							active = False
 						}
-					}
-					ScienceData
-					{
-						data = 25
-						subjectID = mobileMaterialsLab@DunaSrfLandedMidlandSea
-						xmit = 0.349999994
-						xmitBonus = 1.40000069
-						title = 在Duna的内陆海的材料研究
-						triggered = False
-						container = 3806309093
 					}
 					UPGRADESAPPLIED
 					{
@@ -34854,10 +34800,10 @@ GAME
 				attm = 1
 				srfN = srfAttach, 10
 				mass = 0.00499999989
-				shielded = True
-				temp = 246.72790399461357
-				tempExt = 246.72887692273633
-				tempExtUnexp = 4
+				shielded = False
+				temp = 248.11418436470706
+				tempExt = 248.03044008519615
+				tempExtUnexp = 248.03067733479477
 				expt = 0.5
 				state = 0
 				attached = True
@@ -34879,7 +34825,7 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = True
+					Deployed = False
 					Inoperable = False
 					cooldownToGo = 0
 					stagingEnabled = True
@@ -34896,16 +34842,6 @@ GAME
 						{
 							actionGroup = None
 						}
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@DunaSrfLandedMidlandSea
-						xmit = 0.600000024
-						xmitBonus = 1.40000045
-						title = 在Duna的内陆海的大气分析
-						triggered = False
-						container = 544771486
 					}
 					UPGRADESAPPLIED
 					{
@@ -34972,10 +34908,10 @@ GAME
 				attm = 1
 				srfN = srfAttach, 10
 				mass = 0.00499999989
-				shielded = True
-				temp = 246.72839277143538
-				tempExt = 246.72889949308225
-				tempExtUnexp = 4
+				shielded = False
+				temp = 248.61019836452994
+				tempExt = 248.11638762915564
+				tempExtUnexp = 248.11660392868868
 				expt = 0.5
 				state = 0
 				attached = True
@@ -35100,10 +35036,10 @@ GAME
 				attm = 1
 				srfN = srfAttach, 10
 				mass = 0.00499999989
-				shielded = True
-				temp = 246.72727817022661
-				tempExt = 246.72838005532259
-				tempExtUnexp = 4
+				shielded = False
+				temp = 248.60692798272572
+				tempExt = 248.17990266088981
+				tempExtUnexp = 248.18010862632616
 				expt = 0.5
 				state = 0
 				attached = True
@@ -35228,10 +35164,10 @@ GAME
 				attm = 1
 				srfN = srfAttach, 10
 				mass = 0.00499999989
-				shielded = True
-				temp = 246.72789848370979
-				tempExt = 246.72888943185774
-				tempExtUnexp = 4
+				shielded = False
+				temp = 248.34358962461448
+				tempExt = 248.10142602013147
+				tempExtUnexp = 248.10167459186022
 				expt = 0.5
 				state = 0
 				attached = True
@@ -35613,10 +35549,10 @@ GAME
 				attm = 1
 				srfN = srfAttach, 10
 				mass = 0.00499999989
-				shielded = True
-				temp = 246.72758319204922
-				tempExt = 246.72858157666928
-				tempExtUnexp = 4
+				shielded = False
+				temp = 248.60624485807966
+				tempExt = 248.17969276093899
+				tempExtUnexp = 248.17989871965483
 				expt = 0.5
 				state = 0
 				attached = True
@@ -35741,10 +35677,10 @@ GAME
 				attm = 1
 				srfN = srfAttach, 10
 				mass = 0.00499999989
-				shielded = True
-				temp = 246.72728698889324
-				tempExt = 246.7283833320854
-				tempExtUnexp = 4
+				shielded = False
+				temp = 248.60710443648784
+				tempExt = 248.17995672405488
+				tempExtUnexp = 248.18016268833227
 				expt = 0.5
 				state = 0
 				attached = True
@@ -35786,7 +35722,7 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = True
+					Deployed = False
 					Inoperable = False
 					cooldownToGo = 0
 					stagingEnabled = True
@@ -35803,16 +35739,6 @@ GAME
 						{
 							actionGroup = None
 						}
-					}
-					ScienceData
-					{
-						data = 50
-						subjectID = seismicScan@DunaSrfLandedMidlandSea
-						xmit = 0.449999988
-						xmitBonus = 1.40000045
-						title = 在Duna的内陆海的地震扫描
-						triggered = False
-						container = 2693993867
 					}
 					UPGRADESAPPLIED
 					{
@@ -35879,10 +35805,10 @@ GAME
 				attm = 1
 				srfN = srfAttach, 10
 				mass = 0.0500000007
-				shielded = True
-				temp = 246.73309123231761
-				tempExt = 246.73088045935702
-				tempExtUnexp = 4
+				shielded = False
+				temp = 248.61030395997923
+				tempExt = 248.18093031509454
+				tempExtUnexp = 248.1811361330424
 				expt = 0.5
 				state = 0
 				attached = True
@@ -36014,10 +35940,10 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.0500000007
-				shielded = True
-				temp = 246.73941010199385
-				tempExt = 246.73044363850161
-				tempExtUnexp = 4
+				shielded = False
+				temp = 249.2526056743842
+				tempExt = 248.13821773668866
+				tempExtUnexp = 248.13854254328007
 				expt = 0.5
 				state = 0
 				attached = True
@@ -36068,10 +35994,40 @@ GAME
 					ScienceData
 					{
 						data = 25
-						subjectID = mobileMaterialsLab@DunaInSpaceLow
+						subjectID = mobileMaterialsLab@DunaSrfLandedMidlandSea
 						xmit = 0.349999994
-						xmitBonus = 1.40000069
-						title = 在距离Duna较近的太空中的材料研究
+						xmitBonus = 1.39998126
+						title = 在Duna的内陆海的材料研究
+						triggered = False
+						container = 3986564472
+					}
+					ScienceData
+					{
+						data = 200
+						subjectID = atmosphereAnalysis@DunaSrfLandedMidlandSea
+						xmit = 0.600000024
+						xmitBonus = 1.39998126
+						title = 在Duna的内陆海的大气分析
+						triggered = False
+						container = 3986564472
+					}
+					ScienceData
+					{
+						data = 50
+						subjectID = seismicScan@DunaSrfLandedMidlandSea
+						xmit = 0.449999988
+						xmitBonus = 1.39998126
+						title = 在Duna的内陆海的地震扫描
+						triggered = False
+						container = 3986564472
+					}
+					ScienceData
+					{
+						data = 30
+						subjectID = surfaceSample@DunaSrfLandedMidlandSea
+						xmit = 0.25
+						xmitBonus = 1.39998126
+						title = 在Duna的内陆海的地表样本
 						triggered = False
 						container = 3986564472
 					}
@@ -36158,9 +36114,9 @@ GAME
 				srfN = srfAttach, 9
 				mass = 0.300000012
 				shielded = False
-				temp = 246.398022366265
-				tempExt = 246.19811240856993
-				tempExtUnexp = 246.1962360051663
+				temp = 241.15082586035052
+				tempExt = 242.89685406220414
+				tempExtUnexp = 242.89647294984709
 				expt = 0.5
 				state = 0
 				attached = True
@@ -36184,7 +36140,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 76576964.672359943
-					currentRotation = (-0.34477219, -0.344542891, -0.617372453, 0.617473662)
+					currentRotation = (-0.162398845, -0.162137836, -0.688228965, 0.68824333)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -36274,9 +36230,9 @@ GAME
 				srfN = srfAttach, 9
 				mass = 0.300000012
 				shielded = False
-				temp = 246.22902512830871
-				tempExt = 245.6811677307584
-				tempExtUnexp = 245.67940974197523
+				temp = 240.36129946209383
+				tempExt = 241.4961140116597
+				tempExtUnexp = 241.49578608850373
 				expt = 0.5
 				state = 0
 				attached = True
@@ -36300,7 +36256,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 76576964.672359943
-					currentRotation = (-0.617537737, -0.617287636, -0.34459281, 0.344759285)
+					currentRotation = (-0.688333511, -0.688103437, -0.162229359, 0.162457019)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -36391,9 +36347,9 @@ GAME
 				attN = bottom, 22
 				mass = 3.5
 				shielded = False
-				temp = 246.69538688739726
-				tempExt = 246.67645046947945
-				tempExtUnexp = 246.6760967864044
+				temp = 247.94152910753459
+				tempExt = 247.93597022206768
+				tempExtUnexp = 247.93599087959205
 				expt = 0.5
 				state = 0
 				attached = True
@@ -36428,16 +36384,6 @@ GAME
 							actionGroup = None
 						}
 					}
-					ScienceData
-					{
-						data = 30
-						subjectID = surfaceSample@DunaSrfLandedMidlandSea
-						xmit = 0.25
-						xmitBonus = 1.40000069
-						title = 在Duna的内陆海的地表样本
-						triggered = False
-						container = 2443939964
-					}
 					UPGRADESAPPLIED
 					{
 					}
@@ -36446,8 +36392,8 @@ GAME
 				{
 					name = ModuleScienceLab
 					isEnabled = True
-					dataStored = 555.121704
-					storedScience = 0.822414517
+					dataStored = 696.853943
+					storedScience = 0.179379135
 					stagingEnabled = True
 					EVENTS
 					{
@@ -36467,6 +36413,7 @@ GAME
 						experiment = barometerScan@DunaSrfLandedMidlandSea
 						experiment = gravityScan@DunaSrfLandedMidlandSea
 						experiment = evaReport@DunaSrfLandedMidlandSea
+						experiment = mobileMaterialsLab@DunaInSpaceLow
 					}
 					UPGRADESAPPLIED
 					{
@@ -36479,7 +36426,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = True
 					stagingEnabled = True
-					lastUpdateTime = 188297163.96776068
+					lastUpdateTime = 192433489.14378962
 					EVENTS
 					{
 					}
@@ -36701,9 +36648,9 @@ GAME
 				attN = bottom, 28
 				mass = 1
 				shielded = False
-				temp = 246.71580073032206
-				tempExt = 246.69919626669892
-				tempExtUnexp = 246.69880808495148
+				temp = 248.10788320582648
+				tempExt = 248.06922746748538
+				tempExtUnexp = 248.06926639053262
 				expt = 0.5
 				state = 0
 				attached = True
@@ -36887,9 +36834,9 @@ GAME
 				srfN = srfAttach, 22
 				mass = 0.100000001
 				shielded = False
-				temp = 246.70009046027408
-				tempExt = 246.64399824192628
-				tempExtUnexp = 246.64349688119128
+				temp = 248.1307372339229
+				tempExt = 248.03683333639589
+				tempExtUnexp = 248.03684884133187
 				expt = 0.5
 				state = 0
 				attached = True
@@ -36937,7 +36884,7 @@ GAME
 					springTweakable = 1
 					damperTweakable = 1
 					autoSpringDamper = True
-					suspensionPos = (3.13451835E-07, 9.1791153E-06, 0.386656404)
+					suspensionPos = (-3.36979127E-07, -3.1888485E-06, 0.402661502)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -37084,9 +37031,9 @@ GAME
 				srfN = srfAttach, 22
 				mass = 0.100000001
 				shielded = False
-				temp = 246.70016154233724
-				tempExt = 246.64495149290028
-				tempExtUnexp = 246.64444960324712
+				temp = 248.13430074096465
+				tempExt = 248.07912608355721
+				tempExtUnexp = 248.0791572828382
 				expt = 0.5
 				state = 0
 				attached = True
@@ -37134,7 +37081,7 @@ GAME
 					springTweakable = 1
 					damperTweakable = 1
 					autoSpringDamper = True
-					suspensionPos = (9.45951524E-06, -3.36766243E-06, 0.394966841)
+					suspensionPos = (3.04285959E-06, 5.06639481E-07, 0.409565449)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -37281,9 +37228,9 @@ GAME
 				srfN = srfAttach, 22
 				mass = 0.100000001
 				shielded = False
-				temp = 246.70538234638207
-				tempExt = 246.7120520175076
-				tempExtUnexp = 246.71152131744358
+				temp = 248.14098510416903
+				tempExt = 248.17343984682898
+				tempExtUnexp = 248.17349273558793
 				expt = 0.5
 				state = 0
 				attached = True
@@ -37331,7 +37278,7 @@ GAME
 					springTweakable = 1
 					damperTweakable = 1
 					autoSpringDamper = True
-					suspensionPos = (-1.19369975E-06, -1.41859055E-05, 0.407521605)
+					suspensionPos = (-8.40578537E-07, -1.01923943E-05, 0.418078065)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -37478,9 +37425,9 @@ GAME
 				srfN = srfAttach, 22
 				mass = 0.100000001
 				shielded = False
-				temp = 246.7030400358953
-				tempExt = 246.681617220368
-				tempExtUnexp = 246.68110689510902
+				temp = 248.13527984117047
+				tempExt = 248.09849520702545
+				tempExtUnexp = 248.09852539460962
 				expt = 0.5
 				state = 0
 				attached = True
@@ -37528,7 +37475,7 @@ GAME
 					springTweakable = 1
 					damperTweakable = 1
 					autoSpringDamper = True
-					suspensionPos = (4.47793946E-06, 1.10268593E-06, 0.399182439)
+					suspensionPos = (-7.36752827E-06, 1.90734863E-06, 0.411189735)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -37672,9 +37619,9 @@ GAME
 				srfN = srfAttach, 22
 				mass = 0.00499999989
 				shielded = False
-				temp = 246.63343919643094
-				tempExt = 246.57919846508025
-				tempExtUnexp = 246.57862363787709
+				temp = 248.08649807818367
+				tempExt = 247.99635976523825
+				tempExtUnexp = 247.99637440105235
 				expt = 0.5
 				state = 0
 				attached = True
@@ -37784,9 +37731,9 @@ GAME
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 246.68212025455483
-				tempExt = 246.66463820334107
-				tempExtUnexp = 246.66444679086879
+				temp = 248.13180506621811
+				tempExt = 248.06258239630577
+				tempExtUnexp = 248.06261452638148
 				expt = 0.5
 				state = 1
 				attached = True
@@ -38029,9 +37976,9 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.0149999997
 				shielded = False
-				temp = 246.64657330639446
-				tempExt = 246.85469932373536
-				tempExtUnexp = 246.8543621421843
+				temp = 246.80384575349061
+				tempExt = 246.95144278109777
+				tempExtUnexp = 246.95131355722776
 				expt = 0.5
 				state = 0
 				attached = True
@@ -38133,9 +38080,9 @@ GAME
 				attN = bottom, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 246.66663222125021
-				tempExt = 246.95462285302182
-				tempExtUnexp = 246.95418067611351
+				temp = 246.94270415619832
+				tempExt = 247.15115647274592
+				tempExtUnexp = 247.15108341691055
 				expt = 0.5
 				state = 0
 				attached = True
@@ -45489,17 +45436,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 76480158.061615363
+			met = 80616483.2376443
 			lct = 111817005.90614532
-			lastUT = 188297163.96776068
-			distanceTraveled = 2.4713932117824435
+			lastUT = 192433489.14378962
+			distanceTraveled = 2.5063325435795796
 			root = 0
-			lat = 0.28010374440492419
-			lon = -25.463832524202648
-			alt = 1019.3278388873441
-			hgt = 0.0835153386
-			nrm = 0.937371731,0.00712817907,-0.348257869
-			rot = -0.6399737,-0.0520418845,0.283964664,-0.712102115
+			lat = 0.28010353268382776
+			lon = -25.463832627044653
+			alt = 1019.3506233803346
+			hgt = 0.0836599544
+			nrm = 0.936998308,0.00717446208,-0.349260211
+			rot = -0.638988495,-0.0516201593,0.283919603,-0.713034928
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -45507,18 +45454,18 @@ GAME
 			ctrl = False
 			PQSMin = 2
 			PQSMax = 8
-			cPch = 0.1862245
-			cHdg = 0.4277785
+			cPch = 0.3360319
+			cHdg = 0.461584
 			cMod = 0
 			ORBIT
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 0.28010374440487057
+				INC = 0.28010353268023069
 				LPE = 270
-				LAN = 44.571427812486718
+				LAN = 163.45353104866672
 				MNA = 0
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 6
 			}
 			PART
@@ -45544,9 +45491,9 @@ GAME
 				srfN = , -1
 				mass = 0.00999999978
 				shielded = False
-				temp = 220.94801640732143
-				tempExt = 221.70617078339458
-				tempExtUnexp = 221.70611205847698
+				temp = 218.08866899633927
+				tempExt = 219.6432054907155
+				tempExtUnexp = 219.643150034293
 				expt = 0.5
 				state = 0
 				attached = True
@@ -48659,13 +48606,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
-				INC = 1.1075243829632155
+				INC = 1.1075243829961254
 				LPE = 270
-				LAN = 293.44517586939571
+				LAN = 52.326334015408747
 				MNA = 0
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 7
 			}
 			PART
@@ -62052,7 +61999,7 @@ GAME
 			persistentId = 838821988
 			name = EVE载人
 			type = Lander
-			sit = ESCAPING
+			sit = ORBITING
 			landed = False
 			skipGroundPositioning = False
 			vesselSpawning = False
@@ -62060,36 +62007,36 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 11538207.628163844
+			met = 11566071.150133878
 			lct = 180894264.13109356
-			lastUT = 192432471.77925742
-			distanceTraveled = 5992910.8592029726
+			lastUT = 192460335.28122744
+			distanceTraveled = 8971877.4751678295
 			root = 0
-			lat = 0.89554206386511037
-			lon = -11.481701840164559
-			alt = 297407.96222999005
+			lat = -15.762439068580372
+			lon = 100.73277274142832
+			alt = 1876002.0447706459
 			hgt = -1
-			nrm = -0.682708979,-0.482802361,-0.548461795
-			rot = 0.336475134,-0.768371403,-0.504921257,0.203579202
-			CoM = 1.90734863E-06,-1.24790251,-1.66893005E-06
+			nrm = -0.647625685,0.0755344927,0.758205414
+			rot = -0.399497956,-0.254689842,0.527188063,-0.705412865
+			CoM = -3.9935112E-06,-1.31311572,0.00308120251
 			stg = 2
 			prst = False
 			ref = 1446304749
 			ctrl = True
 			PQSMin = 2
 			PQSMax = 9
-			cPch = 0.6467955
-			cHdg = -1.134804
+			cPch = 0.2
+			cHdg = 0.3
 			cMod = 0
 			ORBIT
 			{
-				SMA = -5395292.6092718579
-				ECC = 1.1449359400004686
-				INC = 17.990032958965351
-				LPE = 56.363078861213872
-				LAN = 153.33483899774592
-				MNA = -0.041665001355785325
-				EPH = 192432471.77925742
+				SMA = 1712982.8928200605
+				ECC = 0.50931198353773
+				INC = 17.958376455556138
+				LPE = 56.956974468806159
+				LAN = 152.35549101350023
+				MNA = -2.9204367768024748
+				EPH = 192460334.80122718
 				REF = 5
 			}
 			PART
@@ -62117,8 +62064,8 @@ GAME
 				attN = top, 5
 				mass = 2.5
 				shielded = False
-				temp = 260.90229773329804
-				tempExt = 261.06814364844314
+				temp = 319.28045951030612
+				tempExt = 316.66034888533954
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -62892,7 +62839,7 @@ GAME
 							markUT = 180897935.94704989
 							deltaVExpended = NaN
 							dragLosses = NaN
-							gravityLosses = -5681.8932531009796
+							gravityLosses = -5151.3864441631813
 							steeringLosses = NaN
 							markLAN = 27.755297701095735
 							markLatitude = 0.00095582415656449203
@@ -62935,6 +62882,9 @@ GAME
 						0 = Orbit,Sun
 						0 = Flyby,Eve
 						0 = Escape,Eve
+						0 = Flight,Eve
+						0 = Suborbit,Eve
+						0 = Orbit,Eve
 					}
 					UPGRADESAPPLIED
 					{
@@ -62977,7 +62927,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.516578674316406
+					amount = 93.828720092773438
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -63023,8 +62973,8 @@ GAME
 				attN = top, 0
 				mass = 0.5
 				shielded = False
-				temp = 260.89022946332801
-				tempExt = 260.5435730372331
+				temp = 309.08133681939967
+				tempExt = 309.49040913236558
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -63228,8 +63178,8 @@ GAME
 				attN = bottom, 3
 				mass = 0.209999993
 				shielded = False
-				temp = 260.87374383566186
-				tempExt = 260.45329567898568
+				temp = 310.27227120136018
+				tempExt = 309.38799683346798
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -63376,8 +63326,8 @@ GAME
 				attN = bottom, 4
 				mass = 1
 				shielded = False
-				temp = 260.88823950653443
-				tempExt = 260.46223068243205
+				temp = 310.28204736377558
+				tempExt = 309.24460736609927
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -63516,7 +63466,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 682.20872508546552
+					amount = 665.21630581261093
 					maxAmount = 720
 					flowState = True
 					isTweakable = True
@@ -63527,7 +63477,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 833.81061938313803
+					amount = 813.04210593820744
 					maxAmount = 880
 					flowState = True
 					isTweakable = True
@@ -63561,8 +63511,8 @@ GAME
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 260.8818409487875
-				tempExt = 260.46032704767646
+				temp = 310.37232699979711
+				tempExt = 309.18015948840701
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -63687,7 +63637,7 @@ GAME
 				{
 					name = FXModuleAnimateThrottle
 					isEnabled = True
-					animState = 0
+					animState = 0.000786432356
 					stagingEnabled = True
 					EVENTS
 					{
@@ -63809,8 +63759,8 @@ GAME
 				attN = top, -1
 				mass = 1.5
 				shielded = False
-				temp = 260.89095020804177
-				tempExt = 264.71437840464398
+				temp = 313.8567683575061
+				tempExt = 301.13660700246129
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -63834,11 +63784,11 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					aniState = LOCKED
-					animSwitch = True
-					animTime = 0
-					animSpeed = -40
+					animSwitch = False
+					animTime = 1
+					animSpeed = 1
 					deployPercent = 100
-					animationIsDisabled = False
+					animationIsDisabled = True
 					stagingEnabled = True
 					EVENTS
 					{
@@ -63848,6 +63798,7 @@ GAME
 						ToggleAction
 						{
 							actionGroup = None
+							active = False
 						}
 					}
 					UPGRADESAPPLIED
@@ -63975,8 +63926,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.100000001
 				shielded = False
-				temp = 260.89626924227781
-				tempExt = 260.61132502753935
+				temp = 313.9274779282764
+				tempExt = 314.4866382174244
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -64132,8 +64083,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.100000001
 				shielded = False
-				temp = 260.89626924227781
-				tempExt = 260.61132502753935
+				temp = 313.9274779282764
+				tempExt = 314.4866382174244
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -64291,8 +64242,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 260.9605358606297
-				tempExt = 260.89271021916659
+				temp = 318.28566006790203
+				tempExt = 316.85984575460287
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -64412,8 +64363,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 260.9605358606297
-				tempExt = 260.89271021916659
+				temp = 318.28566006790203
+				tempExt = 316.85984575460287
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -64533,8 +64484,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 260.9605358606297
-				tempExt = 260.89271021916659
+				temp = 318.28566006790203
+				tempExt = 316.85984575460287
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -64654,8 +64605,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 260.9605358606297
-				tempExt = 260.89271021916659
+				temp = 318.28566006790203
+				tempExt = 316.85984575460287
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -64755,7 +64706,7 @@ GAME
 				Gear = False, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = True, 192432459.719251
+				SAS = True, 192460322.24122
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -64782,9 +64733,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0.0300091617
-				yaw = -0.0103474827
-				roll = -0.00291456352
+				pitch = -0.0756686851
+				yaw = -0.0637882277
+				roll = 0.0108241625
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -64809,7 +64760,7 @@ GAME
 		{
 			pid = 441fe11eb39042b1ace79f60c0b2ac97
 			persistentId = 1358215463
-			name = 空间站核心舱
+			name = ike空间站
 			type = Station
 			sit = ORBITING
 			landed = False
@@ -64819,36 +64770,36 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 7402673.303150773
+			met = 11538216.367829353
 			lct = 180894665.36470363
-			lastUT = 188297338.70785442
-			distanceTraveled = 18421882.441485021
+			lastUT = 192432881.73253298
+			distanceTraveled = 18436832.852105346
 			root = 0
-			lat = -0.026124366375201904
-			lon = -126.82274749730699
-			alt = 50446.350703534757
+			lat = 0.02275530521519643
+			lon = 3.2908869919623425
+			alt = 50162.735482123506
 			hgt = -1
-			nrm = -0.838298559,-0.510428607,-0.191620409
-			rot = 0.77358973,0.300091296,0.55494839,-0.0594674945
-			CoM = 0.705230057,2.45178747,0.134523094
+			nrm = 0.258745372,0.543819606,0.79831773
+			rot = 0.774733186,0.299984545,0.553342879,-0.0600790791
+			CoM = 0.704918563,2.45178461,0.13491714
 			stg = 1
 			prst = False
 			ref = 1955421426
 			ctrl = True
 			PQSMin = 2
 			PQSMax = 9
-			cPch = 0.2380002
-			cHdg = 6.642001
+			cPch = 0.6279997
+			cHdg = -0.9840005
 			cMod = 0
 			ORBIT
 			{
-				SMA = 180302.82338227579
-				ECC = 0.00079444799833300642
-				INC = 0.046621600708605174
-				LPE = 43.381037736145082
-				LAN = 12.835236467412301
-				MNA = 2.9927002905554954
-				EPH = 188297338.68785441
+				SMA = 180302.84349876532
+				ECC = 0.00079470984954376552
+				INC = 0.04661969322878029
+				LPE = 43.367303221708667
+				LAN = 12.840513394727793
+				MNA = -0.25946839081379997
+				EPH = 192432881.73253298
 				REF = 7
 			}
 			PART
@@ -64876,8 +64827,8 @@ GAME
 				attN = top, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 186.7294230789154
-				tempExt = 186.65982900358057
+				temp = 101.03973008885272
+				tempExt = 101.08520567232085
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -65621,7 +65572,7 @@ GAME
 							markUT = 180898136.46715745
 							deltaVExpended = NaN
 							dragLosses = NaN
-							gravityLosses = 391.79190245805643
+							gravityLosses = 391.78582975874309
 							steeringLosses = NaN
 							markLAN = 26.010194278038682
 							markLatitude = -0.1234289327195309
@@ -65719,8 +65670,8 @@ GAME
 				attN = bottom, 0
 				mass = 1.5
 				shielded = False
-				temp = 186.6938949933961
-				tempExt = 186.56493640523732
+				temp = 101.00428920860008
+				tempExt = 100.99913464217366
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -65803,8 +65754,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.61674421933571
-				tempExt = 186.54361020463705
+				temp = 100.99958228852219
+				tempExt = 100.99399548366385
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -65936,8 +65887,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.60117313328263
-				tempExt = 186.50938761116913
+				temp = 101.00620165268032
+				tempExt = 101.01192562070509
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66063,8 +66014,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.60452172379223
-				tempExt = 186.52098620138349
+				temp = 100.99869001711482
+				tempExt = 100.99204561106438
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66196,8 +66147,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.60518061141963
-				tempExt = 186.5157516150781
+				temp = 100.99861236088873
+				tempExt = 100.99174122296486
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66329,8 +66280,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.61465129478219
-				tempExt = 186.53941388303224
+				temp = 101.00152088113963
+				tempExt = 101.00166803065899
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66462,8 +66413,8 @@ GAME
 				attN = bottom, 8
 				mass = 0.100000001
 				shielded = False
-				temp = 186.73118383117213
-				tempExt = 186.74164299515132
+				temp = 101.04950040185837
+				tempExt = 101.13550032181743
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66546,8 +66497,8 @@ GAME
 				attN = bottom, 9
 				mass = 0.200000003
 				shielded = False
-				temp = 186.70110061654532
-				tempExt = 186.64761078907424
+				temp = 101.00462628907862
+				tempExt = 101.0154407161137
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66665,8 +66616,8 @@ GAME
 				attN = bottom, 10
 				mass = 0.200000003
 				shielded = False
-				temp = 186.71008302607595
-				tempExt = 186.64284174377394
+				temp = 101.01135522302812
+				tempExt = 101.1191697162011
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66760,8 +66711,8 @@ GAME
 				attN = bottom, 11
 				mass = 4
 				shielded = False
-				temp = 186.71170835400815
-				tempExt = 186.67328173694747
+				temp = 101.00715868198542
+				tempExt = 101.1900502818708
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66945,8 +66896,8 @@ GAME
 				attN = bottom, -1
 				mass = 3
 				shielded = False
-				temp = 186.71730097428355
-				tempExt = 186.75696346667829
+				temp = 101.02686507718782
+				tempExt = 101.34330556798868
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -67191,8 +67142,8 @@ GAME
 				srfN = srfAttach, 10
 				mass = 0.300000012
 				shielded = False
-				temp = 186.77306719330554
-				tempExt = 187.03057375883321
+				temp = 101.08398187619684
+				tempExt = 102.18696555234291
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67217,7 +67168,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180894665.36470363
-					currentRotation = (0.0994300246, 0.099270761, 0.700428247, -0.699756622)
+					currentRotation = (-0.0832479745, -0.0832370669, 0.702541173, -0.701838553)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -67307,8 +67258,8 @@ GAME
 				srfN = srfAttach, 10
 				mass = 0.300000012
 				shielded = False
-				temp = 186.58272169476152
-				tempExt = 186.01677092119266
+				temp = 101.0138320395841
+				tempExt = 101.08058859005773
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67333,7 +67284,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180894665.36470363
-					currentRotation = (0.700150192, 0.699816525, 0.100113966, -0.100118995)
+					currentRotation = (0.702388525, 0.702058196, -0.0830098987, 0.0829095542)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -67423,8 +67374,8 @@ GAME
 				srfN = srfAttach, 10
 				mass = 0.300000012
 				shielded = False
-				temp = 186.7617935041597
-				tempExt = 186.97602921353132
+				temp = 101.12232828024474
+				tempExt = 102.6681494888707
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67449,7 +67400,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180894665.36470363
-					currentRotation = (0.0994020477, 0.0992941409, 0.700426996, -0.69975853)
+					currentRotation = (-0.0832650587, -0.0832083821, 0.70253408, -0.701847017)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -67539,8 +67490,8 @@ GAME
 				srfN = srfAttach, 10
 				mass = 0.300000012
 				shielded = False
-				temp = 186.58140781013287
-				tempExt = 186.01052647713993
+				temp = 101.08947816971174
+				tempExt = 102.13620846150383
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67565,7 +67516,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180894665.36470363
-					currentRotation = (0.700117409, 0.699868977, 0.10005793, -0.10003747)
+					currentRotation = (0.702347636, 0.702094495, -0.0830067992, 0.0829520449)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -67655,8 +67606,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 186.70830304281364
-				tempExt = 186.65118629132954
+				temp = 101.0173026383578
+				tempExt = 101.12474934828663
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67792,8 +67743,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.70121356406335
-				tempExt = 186.6339684588292
+				temp = 101.00418820067992
+				tempExt = 101.01011173898634
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67903,8 +67854,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.70121356406335
-				tempExt = 186.6339684588292
+				temp = 101.00431468366143
+				tempExt = 101.01549854187266
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -68006,8 +67957,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.70159808622483
-				tempExt = 186.63889315296422
+				temp = 101.00418820067992
+				tempExt = 101.01011173898634
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -68117,8 +68068,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.70121356406335
-				tempExt = 186.6339684588292
+				temp = 101.00418820067992
+				tempExt = 101.01011173898634
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -68217,8 +68168,8 @@ GAME
 				srfN = srfAttach, 7
 				mass = 0.0149999997
 				shielded = False
-				temp = 186.72711902759741
-				tempExt = 186.70278741906145
+				temp = 101.0276544057612
+				tempExt = 101.09625888930616
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -68322,8 +68273,8 @@ GAME
 				attN = bottom, 23
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.68751790777659
-				tempExt = 186.5771265294282
+				temp = 101.00591748912191
+				tempExt = 101.00672883679518
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -68455,8 +68406,8 @@ GAME
 				attN = top, 22
 				mass = 0.100000001
 				shielded = False
-				temp = 186.69418176194739
-				tempExt = 186.61054477217232
+				temp = 101.00637672123686
+				tempExt = 101.02450688959173
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -68810,8 +68761,8 @@ GAME
 				attN = bottom, 25
 				mass = 0.189999998
 				shielded = False
-				temp = 186.70058330852606
-				tempExt = 186.64217348689007
+				temp = 101.00687554121976
+				tempExt = 101.06204056375806
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -68905,8 +68856,8 @@ GAME
 				attN = bottom, 26
 				mass = 0.388999999
 				shielded = False
-				temp = 186.70967234234712
-				tempExt = 186.68095500436127
+				temp = 101.00663640087134
+				tempExt = 101.11466593099898
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -69074,8 +69025,8 @@ GAME
 				attN = bottom01, 27
 				mass = 0.170039997
 				shielded = False
-				temp = 186.71074798966575
-				tempExt = 186.69309175947063
+				temp = 101.00553852313045
+				tempExt = 101.06825197469084
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -69155,7 +69106,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 7402673.303150773
+					LastUpdateTime = 11538216.347829342
 					CoolingEnabled = True
 					BoiloffOccuring = False
 					DebugMode = False
@@ -69249,8 +69200,8 @@ GAME
 				attN = bottom, 28
 				mass = 0.513999999
 				shielded = False
-				temp = 186.71094077747003
-				tempExt = 186.69130365159614
+				temp = 101.00591938902284
+				tempExt = 101.13596156236413
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -69344,8 +69295,8 @@ GAME
 				attN = bottom, 31
 				mass = 0.200000003
 				shielded = False
-				temp = 186.65993870160921
-				tempExt = 186.3684140936079
+				temp = 101.01260695658299
+				tempExt = 101.37515228332607
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -69438,8 +69389,8 @@ GAME
 				srfN = srfAttach, 28
 				mass = 0.300000012
 				shielded = False
-				temp = 186.58393789705934
-				tempExt = 186.02924364097115
+				temp = 101.03356563033422
+				tempExt = 101.24601025870459
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -69464,7 +69415,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180939936.60265598
-					currentRotation = (0.0972266197, 0.0974029452, -0.700532198, 0.700224519)
+					currentRotation = (-0.0822967738, -0.0820614994, -0.70244813, 0.702182174)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -69554,8 +69505,8 @@ GAME
 				srfN = srfAttach, 28
 				mass = 0.300000012
 				shielded = False
-				temp = 186.78466140172003
-				tempExt = 187.13180185388944
+				temp = 101.10146905342182
+				tempExt = 102.54189840121612
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -69580,7 +69531,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180939936.60265598
-					currentRotation = (-0.700426042, -0.700227559, 0.0978170633, -0.0975534767)
+					currentRotation = (-0.702461779, -0.702201128, -0.0819430724, 0.0821368471)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -69671,8 +69622,8 @@ GAME
 				attN = bottom, 32
 				mass = 0.200000003
 				shielded = False
-				temp = 186.71239201572581
-				tempExt = 186.67810068957326
+				temp = 101.01180903655691
+				tempExt = 101.14474134841828
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -69790,8 +69741,8 @@ GAME
 				attN = bottom, 33
 				mass = 2.58299971
 				shielded = False
-				temp = 186.71315927256902
-				tempExt = 186.72116188097036
+				temp = 101.00744983753414
+				tempExt = 101.23613826844776
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -69959,8 +69910,8 @@ GAME
 				attN = bottom, 34
 				mass = 1.27799988
 				shielded = False
-				temp = 186.71391432522711
-				tempExt = 186.81767775876185
+				temp = 101.00606544499954
+				tempExt = 101.19422691623176
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -70110,15 +70061,15 @@ GAME
 				dstg = 0
 				sqor = 0
 				sepI = 1
-				sidx = 0
+				sidx = 1
 				attm = 0
 				srfN = , -1
 				attN = top, 33
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 186.7343927493111
-				tempExt = 186.88147218251515
+				temp = 101.01356961125948
+				tempExt = 101.13998143271503
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -70363,8 +70314,8 @@ GAME
 				srfN = srfAttach, 32
 				mass = 0.300000012
 				shielded = False
-				temp = 186.63053566834091
-				tempExt = 186.27363762523569
+				temp = 101.06758288290747
+				tempExt = 101.8669075190798
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -70389,7 +70340,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180939936.60265598
-					currentRotation = (0.0972383618, 0.0973979756, -0.700530171, 0.700225532)
+					currentRotation = (-0.0822890773, -0.0820709094, -0.702447951, 0.702182233)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -70479,8 +70430,8 @@ GAME
 				srfN = srfAttach, 32
 				mass = 0.300000012
 				shielded = False
-				temp = 186.78406920391888
-				tempExt = 187.08996441560225
+				temp = 101.09208364167712
+				tempExt = 102.3959393399612
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -70505,7 +70456,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180939936.60265598
-					currentRotation = (-0.700422406, -0.700232506, 0.0978071615, -0.0975535065)
+					currentRotation = (-0.702459037, -0.702203214, -0.0819498152, 0.0821353495)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -70597,8 +70548,8 @@ GAME
 				srfN = srfAttach, 32
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71037221449208
-				tempExt = 186.67989178607121
+				temp = 101.01048936253497
+				tempExt = 101.16025458823131
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -70712,8 +70663,8 @@ GAME
 				srfN = srfAttach, 32
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71037221449208
-				tempExt = 186.67989178607121
+				temp = 101.01048936253497
+				tempExt = 101.16025458823131
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -70827,8 +70778,8 @@ GAME
 				srfN = srfAttach, 32
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71037221449208
-				tempExt = 186.67989178607121
+				temp = 101.01048936253497
+				tempExt = 101.16025458823131
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -70942,8 +70893,8 @@ GAME
 				srfN = srfAttach, 32
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71037221449208
-				tempExt = 186.67989178607121
+				temp = 101.01048936253497
+				tempExt = 101.16025458823131
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -71054,8 +71005,8 @@ GAME
 				srfN = srfAttach, 32
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.70904205631504
-				tempExt = 186.68487825022478
+				temp = 101.02355474489688
+				tempExt = 101.1623291014113
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -71191,8 +71142,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.70863173078379
-				tempExt = 186.67193511506707
+				temp = 101.00640657768835
+				tempExt = 101.05317078110366
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -71302,8 +71253,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.70863173078379
-				tempExt = 186.67193511506707
+				temp = 101.00640657768835
+				tempExt = 101.05317078110366
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -71405,8 +71356,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.70863173078379
-				tempExt = 186.67193511506707
+				temp = 101.00640657768835
+				tempExt = 101.05317078110366
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -71508,8 +71459,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.70863173078379
-				tempExt = 186.67193511506707
+				temp = 101.00640657768835
+				tempExt = 101.05317078110366
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -71610,8 +71561,8 @@ GAME
 				attN = bottom, 47
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.73509292776012
-				tempExt = 186.65152880175751
+				temp = 101.00984952254601
+				tempExt = 101.00488984365231
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -71743,8 +71694,8 @@ GAME
 				attN = top, 46
 				mass = 2.5999999
 				shielded = False
-				temp = 186.74900280118661
-				tempExt = 186.70270494344382
+				temp = 101.01156504276818
+				tempExt = 101.01055990647487
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -72256,8 +72207,8 @@ GAME
 				attN = bottom, 49
 				mass = 0.200000003
 				shielded = False
-				temp = 186.85804750286121
-				tempExt = 186.97089252142223
+				temp = 101.029967620118
+				tempExt = 101.04973773837159
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -72351,8 +72302,8 @@ GAME
 				attN = bottom, 50
 				mass = 0.200000003
 				shielded = False
-				temp = 186.98892902739692
-				tempExt = 187.5331805663279
+				temp = 101.05190056857823
+				tempExt = 101.12657451178094
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -72470,8 +72421,8 @@ GAME
 				attN = bottom, 51
 				mass = 3.5
 				shielded = False
-				temp = 187.14003313721133
-				tempExt = 188.16527253002448
+				temp = 101.07727511721606
+				tempExt = 101.20673759371513
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -72537,7 +72488,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = False
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -72757,8 +72708,8 @@ GAME
 				attN = bottom, 52
 				mass = 2
 				shielded = False
-				temp = 187.89012758339359
-				tempExt = 189.92761905534266
+				temp = 101.19917358766449
+				tempExt = 101.43054714642538
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -72942,8 +72893,8 @@ GAME
 				attN = bottom, 53
 				mass = 4.25
 				shielded = False
-				temp = 200.6465172881644
-				tempExt = 194.47016369850678
+				temp = 102.51736001070628
+				tempExt = 101.95971896614728
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -72984,7 +72935,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = False
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -73014,7 +72965,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = False
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -73044,7 +72995,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = False
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -73074,7 +73025,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = False
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -73133,9 +73084,9 @@ GAME
 					name = ModuleCoreHeat
 					isEnabled = True
 					CoreTempGoalAdjustment = 0
-					CoreThermalEnergy = 3357806.7129056575
+					CoreThermalEnergy = 348148.20026963181
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -73176,7 +73127,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = False
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -73206,7 +73157,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = False
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -73263,15 +73214,15 @@ GAME
 				dstg = 0
 				sqor = 0
 				sepI = 1
-				sidx = 0
+				sidx = 2
 				attm = 0
 				srfN = , -1
 				attN = top, 52
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 193.40424515969852
-				tempExt = 193.65271071903945
+				temp = 102.10393717988927
+				tempExt = 102.03964779704901
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 1
@@ -73516,8 +73467,8 @@ GAME
 				srfN = srfAttach, 51
 				mass = 0.25
 				shielded = False
-				temp = 186.54700617295637
-				tempExt = 186.51250778139337
+				temp = 100.99203681784556
+				tempExt = 100.98853404687456
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -73540,7 +73491,7 @@ GAME
 				{
 					name = ModuleDeployableRadiator
 					isEnabled = True
-					currentRotation = (1.9371505E-06, 0.489788353, 4.47034745E-06, 0.871841371)
+					currentRotation = (1.90734841E-06, 0.259525567, 6.40749874E-07, 0.96573627)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -73661,8 +73612,8 @@ GAME
 				srfN = srfAttach, 51
 				mass = 0.25
 				shielded = False
-				temp = 186.58759831812313
-				tempExt = 186.56127468068593
+				temp = 101.01108461403525
+				tempExt = 101.01801103660945
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -73685,7 +73636,7 @@ GAME
 				{
 					name = ModuleDeployableRadiator
 					isEnabled = True
-					currentRotation = (-5.06639481E-07, -0.489788681, 4.2617321E-06, 0.871841192)
+					currentRotation = (-2.05636002E-06, -0.259525031, 1.19209275E-07, 0.965736389)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -73806,8 +73757,8 @@ GAME
 				srfN = srfAttach, 51
 				mass = 0.25
 				shielded = False
-				temp = 186.70251312082809
-				tempExt = 186.70101966113128
+				temp = 100.99193351410661
+				tempExt = 100.98792939252247
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -73830,7 +73781,7 @@ GAME
 				{
 					name = ModuleDeployableRadiator
 					isEnabled = True
-					currentRotation = (0, 0.489788651, 7.59959107E-07, 0.871841192)
+					currentRotation = (-1.07288338E-06, 0.259525448, -7.15255567E-07, 0.96573627)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -73951,8 +73902,8 @@ GAME
 				srfN = srfAttach, 51
 				mass = 0.25
 				shielded = False
-				temp = 186.89105172825327
-				tempExt = 186.92727786281267
+				temp = 100.9931401757415
+				tempExt = 100.98920420011129
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -73975,7 +73926,7 @@ GAME
 				{
 					name = ModuleDeployableRadiator
 					isEnabled = True
-					currentRotation = (-5.06639424E-07, -0.489787996, 5.49852803E-06, 0.87184155)
+					currentRotation = (-4.76837158E-07, -0.259525329, 9.83476639E-07, 0.965736389)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -74096,8 +74047,8 @@ GAME
 				srfN = srfAttach, 51
 				mass = 0.075000003
 				shielded = False
-				temp = 187.42873575269414
-				tempExt = 189.05515793852365
+				temp = 101.12873304360295
+				tempExt = 101.36063193574591
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -74241,8 +74192,8 @@ GAME
 				srfN = srfAttach, 51
 				mass = 0.075000003
 				shielded = False
-				temp = 187.42873575269414
-				tempExt = 189.05515793852365
+				temp = 101.12883370494379
+				tempExt = 101.36301687960136
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -74386,8 +74337,8 @@ GAME
 				srfN = srfAttach, 50
 				mass = 0.300000012
 				shielded = False
-				temp = 186.71972218690382
-				tempExt = 186.74871564692302
+				temp = 101.00621622354605
+				tempExt = 100.99703355993462
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -74412,7 +74363,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180938093.17806166
-					currentRotation = (-0.681221008, -0.680776954, -0.190328285, 0.190409705)
+					currentRotation = (-0.61389482, -0.613443971, -0.351314306, 0.351280481)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -74502,8 +74453,8 @@ GAME
 				srfN = srfAttach, 50
 				mass = 0.300000012
 				shielded = False
-				temp = 186.86641115640239
-				tempExt = 187.53037476004812
+				temp = 101.00627637189847
+				tempExt = 100.9977590550297
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -74528,7 +74479,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180938093.17806166
-					currentRotation = (-0.190466419, -0.190187678, -0.681068361, 0.680953145)
+					currentRotation = (-0.351469785, -0.351170182, -0.613680303, 0.613632619)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -74620,8 +74571,8 @@ GAME
 				srfN = srfAttach, 49
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.83800700682852
-				tempExt = 187.34621605966385
+				temp = 101.02576461987947
+				tempExt = 101.10294986830547
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -74723,8 +74674,8 @@ GAME
 				srfN = srfAttach, 49
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.83800700682852
-				tempExt = 187.34621605966385
+				temp = 101.02576461987947
+				tempExt = 101.10294986830547
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -74826,8 +74777,8 @@ GAME
 				srfN = srfAttach, 49
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.83800700682852
-				tempExt = 187.34621605966385
+				temp = 101.02586479726423
+				tempExt = 101.1080979490059
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -74929,8 +74880,8 @@ GAME
 				srfN = srfAttach, 49
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.84051453975204
-				tempExt = 187.38456354257184
+				temp = 101.02579475328028
+				tempExt = 101.10295625868075
 				tempExtUnexp = 306.96751799066709
 				expt = 0.5
 				state = 0
@@ -75031,8 +74982,8 @@ GAME
 				attN = bottom, 67
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.65668777893799
-				tempExt = 186.55089362340564
+				temp = 101.00106854333377
+				tempExt = 100.99158313849631
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -75164,8 +75115,8 @@ GAME
 				attN = top, 66
 				mass = 0.100000001
 				shielded = False
-				temp = 186.66241339765779
-				tempExt = 186.5707620782714
+				temp = 101.00148397413767
+				tempExt = 100.99290297645736
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -75519,8 +75470,8 @@ GAME
 				attN = bottom, 69
 				mass = 0.100000001
 				shielded = False
-				temp = 186.66712835785208
-				tempExt = 186.57407885946057
+				temp = 101.0017588609158
+				tempExt = 100.99447706585045
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -75603,8 +75554,8 @@ GAME
 				attN = bottom, 70
 				mass = 0.200000003
 				shielded = False
-				temp = 186.68139682024434
-				tempExt = 186.58819733247239
+				temp = 101.00314526393488
+				tempExt = 100.99756438127437
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -75722,8 +75673,8 @@ GAME
 				attN = bottom, 71
 				mass = 0.200000003
 				shielded = False
-				temp = 186.6915113837052
-				tempExt = 186.62113916142991
+				temp = 101.00380285865209
+				tempExt = 101.00602644782482
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -75817,8 +75768,8 @@ GAME
 				attN = bottom, 72
 				mass = 2.5
 				shielded = False
-				temp = 186.7010584257803
-				tempExt = 186.67130477576583
+				temp = 101.00441428832281
+				tempExt = 101.01560320365904
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -76079,8 +76030,8 @@ GAME
 				attN = bottom, 73
 				mass = 2.5
 				shielded = False
-				temp = 186.70711209195846
-				tempExt = 186.70534693940289
+				temp = 101.00525161777392
+				tempExt = 101.03947285965312
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -76341,8 +76292,8 @@ GAME
 				attN = bottom, 74
 				mass = 2.5
 				shielded = False
-				temp = 186.72244274800585
-				tempExt = 186.82466871423804
+				temp = 101.00924103385313
+				tempExt = 101.16584193918941
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -76603,8 +76554,8 @@ GAME
 				attN = bottom, 75
 				mass = 2.5
 				shielded = False
-				temp = 186.71672439419007
-				tempExt = 186.7563420962293
+				temp = 101.00784333647697
+				tempExt = 101.10775508294461
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -76865,8 +76816,8 @@ GAME
 				attN = bottom, 74
 				mass = 0.100000001
 				shielded = False
-				temp = 186.71602083956196
-				tempExt = 186.74802630275607
+				temp = 101.00769251759117
+				tempExt = 101.00860022804946
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -76949,8 +76900,8 @@ GAME
 				attN = bottom, 75
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71126498111948
-				tempExt = 186.67686816332875
+				temp = 101.00990535450633
+				tempExt = 101.02260262312976
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -77076,8 +77027,8 @@ GAME
 				attN = bottom, 78
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.70751083323924
-				tempExt = 186.62124514456232
+				temp = 101.01099904523467
+				tempExt = 101.04456550525633
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -77203,8 +77154,8 @@ GAME
 				attN = bottom, 77
 				mass = 0.0799999982
 				shielded = False
-				temp = 186.71004619913563
-				tempExt = 186.63685555724771
+				temp = 101.01169315082393
+				tempExt = 101.08610630013952
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -77287,8 +77238,8 @@ GAME
 				attN = bottom, 80
 				mass = 1.27799988
 				shielded = False
-				temp = 186.71731264064977
-				tempExt = 186.8211793054312
+				temp = 101.00748706867584
+				tempExt = 101.15896230663272
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -77449,15 +77400,15 @@ GAME
 				dstg = 0
 				sqor = 0
 				sepI = 3
-				sidx = 0
+				sidx = 3
 				attm = 0
 				srfN = , -1
 				attN = top, 79
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 186.73993742644086
-				tempExt = 186.91344405548094
+				temp = 101.03108500345319
+				tempExt = 101.36458961314845
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 1
@@ -77704,8 +77655,8 @@ GAME
 				srfN = srfAttach, 79
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.72005180479141
-				tempExt = 186.76891756167282
+				temp = 101.01036683187607
+				tempExt = 101.08401106132345
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -77823,8 +77774,8 @@ GAME
 				srfN = srfAttach, 79
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.72005180479141
-				tempExt = 186.76891756167282
+				temp = 101.01036683187607
+				tempExt = 101.08401106132345
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -77942,8 +77893,8 @@ GAME
 				srfN = srfAttach, 79
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.72005180479141
-				tempExt = 186.76891756167282
+				temp = 101.01036683187607
+				tempExt = 101.08401106132345
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -78061,8 +78012,8 @@ GAME
 				srfN = srfAttach, 79
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.72005180479141
-				tempExt = 186.76891756167282
+				temp = 101.01036683187607
+				tempExt = 101.08401106132345
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -78180,8 +78131,8 @@ GAME
 				srfN = srfAttach, 75
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71572156183811
-				tempExt = 186.72988609811247
+				temp = 101.0111758533874
+				tempExt = 101.04730332202006
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -78299,8 +78250,8 @@ GAME
 				srfN = srfAttach, 75
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71572156183811
-				tempExt = 186.72988609811247
+				temp = 101.0111758533874
+				tempExt = 101.04730332202006
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -78418,8 +78369,8 @@ GAME
 				srfN = srfAttach, 75
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71572156183811
-				tempExt = 186.72988609811247
+				temp = 101.0111758533874
+				tempExt = 101.04730332202006
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -78537,8 +78488,8 @@ GAME
 				srfN = srfAttach, 75
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.71572156183811
-				tempExt = 186.72988609811247
+				temp = 101.0111758533874
+				tempExt = 101.04730332202006
 				tempExtUnexp = 298.39465447262148
 				expt = 0
 				state = 0
@@ -78654,8 +78605,8 @@ GAME
 				srfN = srfAttach, 74
 				mass = 0.075000003
 				shielded = False
-				temp = 186.71222619778743
-				tempExt = 186.70299381206138
+				temp = 101.00726208898449
+				tempExt = 101.07036645521252
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -78799,8 +78750,8 @@ GAME
 				srfN = srfAttach, 74
 				mass = 0.075000003
 				shielded = False
-				temp = 186.71222619778743
-				tempExt = 186.70299381206138
+				temp = 101.00726208898449
+				tempExt = 101.07036645521252
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -78944,8 +78895,8 @@ GAME
 				srfN = srfAttach, 73
 				mass = 0.300000012
 				shielded = False
-				temp = 186.85686249986807
-				tempExt = 187.50376922547252
+				temp = 101.06798966206838
+				tempExt = 101.95727234985902
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -78970,7 +78921,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180935995.96228206
-					currentRotation = (0.189638719, 0.189401999, -0.681377649, 0.681093693)
+					currentRotation = (0.352950037, 0.352651387, -0.612917364, 0.612695456)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -79060,8 +79011,8 @@ GAME
 				srfN = srfAttach, 73
 				mass = 0.300000012
 				shielded = False
-				temp = 186.89366205542561
-				tempExt = 187.6960530461059
+				temp = 101.05298218581105
+				tempExt = 101.79370184801833
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -79086,7 +79037,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180935995.96228206
-					currentRotation = (-0.681414247, -0.681032538, 0.189534172, -0.18959485)
+					currentRotation = (-0.61301887, -0.61263144, 0.352790266, -0.35274592)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -79176,8 +79127,8 @@ GAME
 				srfN = srfAttach, 72
 				mass = 0.300000012
 				shielded = False
-				temp = 186.73852117421717
-				tempExt = 186.87154023605464
+				temp = 101.03132571866239
+				tempExt = 101.43973006775946
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -79202,7 +79153,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180935995.96228206
-					currentRotation = (0.189638495, 0.18940115, -0.681381106, 0.681090474)
+					currentRotation = (0.352949977, 0.352651477, -0.612921655, 0.612691104)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -79292,8 +79243,8 @@ GAME
 				srfN = srfAttach, 72
 				mass = 0.300000012
 				shielded = False
-				temp = 186.78068345105839
-				tempExt = 187.08483502553329
+				temp = 101.01635005111085
+				tempExt = 101.25038312483521
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -79318,7 +79269,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 180935995.96228206
-					currentRotation = (-0.681410611, -0.681036651, 0.189540789, -0.189586416)
+					currentRotation = (-0.613011956, -0.612636805, 0.352798313, -0.352740556)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -79410,8 +79361,8 @@ GAME
 				srfN = srfAttach, 69
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.68623119040325
-				tempExt = 186.58370304818854
+				temp = 101.0037535688172
+				tempExt = 101.00474119911821
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -79513,8 +79464,8 @@ GAME
 				srfN = srfAttach, 69
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.68623119040325
-				tempExt = 186.58370304818854
+				temp = 101.00340020622347
+				tempExt = 100.99654897088317
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -79616,8 +79567,8 @@ GAME
 				srfN = srfAttach, 69
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.68623119040325
-				tempExt = 186.58370304818854
+				temp = 101.00340020622347
+				tempExt = 100.99654897088317
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -79719,8 +79670,8 @@ GAME
 				srfN = srfAttach, 69
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.68623119040325
-				tempExt = 186.58370304818854
+				temp = 101.00385635028995
+				tempExt = 101.00597660696108
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -79827,8 +79778,8 @@ GAME
 				srfN = srfAttach, 68
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.65455128409744
-				tempExt = 186.560406906759
+				temp = 101.00386098624369
+				tempExt = 101.01058474141625
 				tempExtUnexp = 298.39465447262148
 				expt = 0.5
 				state = 0
@@ -79963,8 +79914,8 @@ GAME
 				attN = bottom, 101
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.68782375050495
-				tempExt = 186.56340325537136
+				temp = 101.00404245989745
+				tempExt = 100.99780642989103
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -80096,8 +80047,8 @@ GAME
 				attN = top, 100
 				mass = 0.100000001
 				shielded = False
-				temp = 186.69516010216287
-				tempExt = 186.57714344530896
+				temp = 101.00451478592079
+				tempExt = 101.00438891031219
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -80454,8 +80405,8 @@ GAME
 				attN = bottom, 105
 				mass = 0.388999999
 				shielded = False
-				temp = 186.70226489923795
-				tempExt = 186.58856794181435
+				temp = 101.00497060856448
+				tempExt = 101.00546937096523
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -80621,8 +80572,8 @@ GAME
 				srfN = srfAttach, 102
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.68702640884172
-				tempExt = 186.58503637891241
+				temp = 101.00407033718841
+				tempExt = 101.00127321611441
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -80755,8 +80706,8 @@ GAME
 				srfN = srfAttach, 102
 				mass = 0.0149999997
 				shielded = False
-				temp = 186.69487174533774
-				tempExt = 186.58409878611201
+				temp = 101.00774674538451
+				tempExt = 101.05291707764513
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -80860,8 +80811,8 @@ GAME
 				attN = bottom, 110
 				mass = 0.200000003
 				shielded = False
-				temp = 186.70109135205931
-				tempExt = 186.59953129230328
+				temp = 101.00651689486116
+				tempExt = 101.02577722247305
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -80980,8 +80931,8 @@ GAME
 				srfN = srfAttach, 105
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.69870007936171
-				tempExt = 186.59526008872055
+				temp = 101.00564072865096
+				tempExt = 101.01946379966526
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81083,8 +81034,8 @@ GAME
 				srfN = srfAttach, 105
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.69870007936171
-				tempExt = 186.59526008872055
+				temp = 101.00564072865096
+				tempExt = 101.01946379966526
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81186,8 +81137,8 @@ GAME
 				srfN = srfAttach, 105
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.69870007936171
-				tempExt = 186.59526008872055
+				temp = 101.00564072865096
+				tempExt = 101.01946379966526
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81289,8 +81240,8 @@ GAME
 				srfN = srfAttach, 105
 				mass = 0.00800000038
 				shielded = False
-				temp = 186.69870007936171
-				tempExt = 186.59526008872055
+				temp = 101.00564072865096
+				tempExt = 101.01946379966526
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81391,8 +81342,8 @@ GAME
 				attN = bottom, 111
 				mass = 0.200000003
 				shielded = False
-				temp = 186.70336520031924
-				tempExt = 186.61271584634545
+				temp = 101.00793814668467
+				tempExt = 101.0764177517573
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81510,8 +81461,8 @@ GAME
 				attN = bottom, 113
 				mass = 2
 				shielded = False
-				temp = 186.70667831037767
-				tempExt = 186.63826704395302
+				temp = 101.00812998404521
+				tempExt = 101.04633405897602
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81622,8 +81573,8 @@ GAME
 				srfN = srfAttach, 111
 				mass = 0.0500000007
 				shielded = False
-				temp = 186.7019964575434
-				tempExt = 186.62533666406378
+				temp = 101.00637805329615
+				tempExt = 101.03047030147916
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81854,8 +81805,8 @@ GAME
 				attN = bottom, 114
 				mass = 2
 				shielded = False
-				temp = 186.71543926733577
-				tempExt = 186.69746539678016
+				temp = 101.01108956090009
+				tempExt = 101.09142084600505
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81961,15 +81912,15 @@ GAME
 				dstg = 0
 				sqor = 0
 				sepI = 1
-				sidx = 0
+				sidx = 4
 				attm = 0
 				srfN = , -1
 				attN = top, 113
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 186.74145487937051
-				tempExt = 186.93443937867798
+				temp = 101.02357434469155
+				tempExt = 101.25947238023896
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -82094,7 +82045,7 @@ GAME
 				{
 					name = FXModuleAnimateThrottle
 					isEnabled = True
-					animState = 9.90740446E-05
+					animState = 0
 					stagingEnabled = True
 					EVENTS
 					{
@@ -82216,8 +82167,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0799999982
 				shielded = False
-				temp = 186.81087300147243
-				tempExt = 186.6942847349342
+				temp = 101.1228082122413
+				tempExt = 101.10401007676796
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82275,7 +82226,7 @@ GAME
 					CoreTempGoalAdjustment = 0
 					CoreThermalEnergy = 24885.432796438516
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -82351,8 +82302,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0799999982
 				shielded = False
-				temp = 186.81087300147243
-				tempExt = 186.6942847349342
+				temp = 101.1228082122413
+				tempExt = 101.10401007676796
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82410,7 +82361,7 @@ GAME
 					CoreTempGoalAdjustment = 0
 					CoreThermalEnergy = 24885.432796438516
 					stagingEnabled = True
-					lastUpdateTime = 188297338.70785442
+					lastUpdateTime = 192432881.73253298
 					EVENTS
 					{
 					}
@@ -82486,8 +82437,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0799999982
 				shielded = False
-				temp = 186.71034843988636
-				tempExt = 186.66347452443395
+				temp = 101.00588665970194
+				tempExt = 101.06122947224952
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82607,8 +82558,8 @@ GAME
 				srfN = srfAttach, 113
 				mass = 0.075000003
 				shielded = False
-				temp = 186.71012580887978
-				tempExt = 186.66262726072958
+				temp = 101.00869191973911
+				tempExt = 101.06139069514602
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82752,8 +82703,8 @@ GAME
 				srfN = srfAttach, 113
 				mass = 0.075000003
 				shielded = False
-				temp = 186.7118297740513
-				tempExt = 186.68918972456066
+				temp = 101.00869191973911
+				tempExt = 101.06139069514602
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82901,8 +82852,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.291999996
 				shielded = False
-				temp = 186.70426626464564
-				tempExt = 186.60296191618934
+				temp = 101.00446058213711
+				tempExt = 101.00015709753207
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83071,8 +83022,8 @@ GAME
 				srfN = srfAttach, 120
 				mass = 0.100000001
 				shielded = False
-				temp = 186.70313485334168
-				tempExt = 186.63445284831201
+				temp = 101.00412134173058
+				tempExt = 100.99691650482492
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83270,8 +83221,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.291999996
 				shielded = False
-				temp = 186.70901785716026
-				tempExt = 186.66418375778412
+				temp = 101.00635504730039
+				tempExt = 101.06454876056323
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83440,8 +83391,8 @@ GAME
 				srfN = srfAttach, 122
 				mass = 0.100000001
 				shielded = False
-				temp = 186.71018133351049
-				tempExt = 186.70063363115923
+				temp = 101.00697496387147
+				tempExt = 101.05511924727085
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83639,8 +83590,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.291999996
 				shielded = False
-				temp = 186.70482829286135
-				tempExt = 186.6090760526761
+				temp = 101.00945545237973
+				tempExt = 101.16465359140361
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83809,8 +83760,8 @@ GAME
 				srfN = srfAttach, 124
 				mass = 0.100000001
 				shielded = False
-				temp = 186.70670974898928
-				tempExt = 186.67565270580695
+				temp = 101.01417017084623
+				tempExt = 101.22468665502547
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -84008,8 +83959,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.291999996
 				shielded = False
-				temp = 186.70214501217791
-				tempExt = 186.57993705838697
+				temp = 101.00461304678537
+				tempExt = 101.00259691117184
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -84178,8 +84129,8 @@ GAME
 				srfN = srfAttach, 126
 				mass = 0.100000001
 				shielded = False
-				temp = 186.69742042100282
-				tempExt = 186.56338039162495
+				temp = 101.00582485294434
+				tempExt = 101.03501326618346
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -84375,8 +84326,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0799999982
 				shielded = False
-				temp = 186.71035246110492
-				tempExt = 186.66347579051128
+				temp = 101.00588665970194
+				tempExt = 101.06122947224952
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -102735,11 +102686,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 0.028083835377464193
+				INC = 0.028083835390441937
 				LPE = 270
-				LAN = 252.04308132830934
+				LAN = 10.924239475467687
 				MNA = 0
-				EPH = 188376591.70406395
+				EPH = 192460334.82122719
 				REF = 7
 			}
 			PART
@@ -111359,9 +111310,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 4fd54c1d865f4d84be65bc83ae58531b
-			persistentId = 1579523248
-			name = Ast.CCM-654
+			pid = 94289fea02d74110bc61436e94fca7d5
+			persistentId = 3893159579
+			name = Ast.DBU-622
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -111371,17 +111322,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 191865666.91122028
-			lct = 191865666.91122028
+			met = 191215734.85368085
+			lct = 191215734.85368085
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = 0.062375088744439693
-			lon = 75.166262600279154
-			alt = 13570791695.417105
+			lat = -0.31587757018506418
+			lon = -117.54179413686821
+			alt = 14773061795.696047
 			hgt = -1
 			nrm = 0,1,0
-			rot = -0.16831097,0.748003006,-0.110877745,0.632352054
+			rot = 0.637551904,-0.715602934,-0.244126111,0.147792041
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -111391,22 +111342,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 14560499556.030592
-				ECC = 0.067202321784618241
-				INC = 0.1068574361129606
-				LPE = 188.84563857632034
-				LAN = 338.93478147392375
-				MNA = 0.25548001743279536
-				EPH = 193394552.29330036
+				SMA = 14397668925.913273
+				ECC = 0.053385177691574748
+				INC = 0.84133030675263909
+				LPE = 349.69878901285296
+				LAN = 266.85321416212196
+				MNA = 0.071952746465324458
+				EPH = 195347813.2716496
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 814430949
-				mid = 814430949
-				persistentId = 276240655
+				uid = 721568764
+				mid = 721568764
+				persistentId = 2779087468
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -111441,8 +111392,113 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 191865666.91122028
-				lifetime = 587972.33734130859
+				lastObservedTime = 191215734.85368085
+				lifetime = 1492640.3869628906
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				ModuleDynamicBatteryStorage
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = fb5ef955a1b14c37826cca7189660f59
+			persistentId = 3445646368
+			name = Ast.SFB-897
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 191467734.85368085
+			lct = 191467734.85368085
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.069570040106557776
+			lon = 54.420934827861927
+			alt = 15631960096.828362
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.313315392,0.527983427,-0.0715116933,0.786099911
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14739275227.394304
+				ECC = 0.07885774551638712
+				INC = 0.23396135850292282
+				LPE = 11.074534812852178
+				LAN = 293.56781121328697
+				MNA = -0.20406389822459944
+				EPH = 196112972.13395429
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 95724104
+				mid = 95724104
+				persistentId = 3995056037
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 1
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 191467734.85368085
+				lifetime = 1026929.443359375
 				refTime = 1728000
 				size = 2
 			}
@@ -111464,9 +111520,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = c84ff5001ab045d8991480e8aca50195
-			persistentId = 3144896612
-			name = Ast.LMF-875
+			pid = 8daa4505e11d44779cee5e8640bdf418
+			persistentId = 1394304915
+			name = Ast.NTX-848
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -111476,17 +111532,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 191935666.91122028
-			lct = 191935666.91122028
+			met = 191669734.85368085
+			lct = 191669734.85368085
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = -0.18654173393040097
-			lon = 34.859477333550117
-			alt = 14974284629.568935
+			lat = 0.34058981758774221
+			lon = -112.15057165289015
+			alt = 14511236145.667347
 			hgt = -1
 			nrm = 0,1,0
-			rot = 0.13926293,0.575729728,-0.330688268,0.734701574
+			rot = 0.687085629,0.197944447,0.457687527,0.528444409
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -111496,22 +111552,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 14391028852.308571
-				ECC = 0.05939400222542561
-				INC = 0.44573037178373764
-				LPE = 147.03886116847099
-				LAN = 165.98855881978807
-				MNA = 0.15025296575864872
-				EPH = 196927279.05721638
+				SMA = 14120765930.974709
+				ECC = 0.049985742013337879
+				INC = 1.4537688924730743
+				LPE = 214.9864527751954
+				LAN = 119.08205449332803
+				MNA = -0.58171121618581645
+				EPH = 196275372.90299726
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 1231128783
-				mid = 1231128783
-				persistentId = 1840371939
+				uid = 117132206
+				mid = 117132206
+				persistentId = 1915012341
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -111546,113 +111602,8 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 191935666.91122028
-				lifetime = 1703582.0068359375
-				refTime = 1728000
-				size = 0
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-				ModuleDynamicBatteryStorage
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 6b37cab396b14d21ac72c47b694703a0
-			persistentId = 768054771
-			name = Ast.PAF-844
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 192069666.91122028
-			lct = 192069666.91122028
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = -0.28798392825015773
-			lon = -85.810969774194348
-			alt = 13424575827.939678
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.474017352,-0.595030785,0.124278732,0.637024939
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 13736227084.281599
-				ECC = 0.013235468162264131
-				INC = 0.30329587396580976
-				LPE = 3.0340268478429206
-				LAN = 203.96094057278424
-				MNA = 0.96022831889565141
-				EPH = 195399380.93709919
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 547323730
-				mid = 547323730
-				persistentId = 3726712976
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 1
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 192069666.91122028
-				lifetime = 1550227.4780273438
+				lastObservedTime = 191669734.85368085
+				lifetime = 1164641.8029785156
 				refTime = 1728000
 				size = 2
 			}
@@ -111674,9 +111625,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 8464d5c4ca0e46c2abb97e3eaed5f8c4
-			persistentId = 1136559433
-			name = Ast.ZQY-328
+			pid = 36b88b95cf3044efa263ddd18e9e4e35
+			persistentId = 2203123987
+			name = Ast.GJA-770
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -111686,17 +111637,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 192215666.91122028
-			lct = 192215666.91122028
+			met = 191931734.85368085
+			lct = 191931734.85368085
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = -1.3434887581027921
-			lon = 156.45379232053463
-			alt = 13815970131.474562
+			lat = -0.061939229922138829
+			lon = 22.324651071948345
+			alt = 13297657135.151289
 			hgt = -1
 			nrm = 0,1,0
-			rot = 0.65566802,-0.489604622,0.196751073,0.540070176
+			rot = 0.625490189,0.0237509068,0.397681355,0.67085582
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -111706,22 +111657,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 15095119380.462191
-				ECC = 0.10300089986195497
-				INC = 1.4923717696586387
-				LPE = 349.55808699216999
-				LAN = 200.36041779586137
-				MNA = 0.22310167145591978
-				EPH = 193932943.04647419
+				SMA = 13666996810.894566
+				ECC = 0.014724776054889361
+				INC = 0.11218786863821964
+				LPE = 24.835025263502008
+				LAN = 158.94838523840951
+				MNA = 1.1859016741531472
+				EPH = 195147648.09830976
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 1281470908
-				mid = 1281470908
-				persistentId = 1040315782
+				uid = 168682697
+				mid = 168682697
+				persistentId = 3621916076
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -111756,8 +111707,8 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 192215666.91122028
-				lifetime = 463649.44152832031
+				lastObservedTime = 191931734.85368085
+				lifetime = 1390593.2739257813
 				refTime = 1728000
 				size = 2
 			}
@@ -111779,9 +111730,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 2ff7e7aa55384081ad8454f64bf0f918
-			persistentId = 1065260375
-			name = Ast.YUM-947
+			pid = e325d75a9dcc43bcac0a2ad61ec63dc2
+			persistentId = 599798223
+			name = Ast.YVL-312
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -111791,17 +111742,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 192352869.01825154
-			lct = 192352869.01825154
+			met = 191943734.85368085
+			lct = 191943734.85368085
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = -0.0022498799220059518
-			lon = -136.99091534445182
-			alt = 12161996147.456049
+			lat = 0.14457890432663889
+			lon = 23.312580199517079
+			alt = 14178377778.753481
 			hgt = -1
 			nrm = 0,1,0
-			rot = -0.0119969873,0.695381105,-0.716460466,0.0546395592
+			rot = 0.0077517475,-0.718425691,-0.385371983,0.579044819
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -111811,22 +111762,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 9531262368.0119171
-				ECC = 0.30345758096118974
-				INC = 12.496536391832784
-				LPE = 89.169757916641643
-				LAN = 47.904001723173678
-				MNA = 3.3197175925031512
-				EPH = 192352869.01825154
+				SMA = 14011765213.300564
+				ECC = 0.030655961764240673
+				INC = 1.2416124031282243
+				LPE = 357.68900432095381
+				LAN = 323.11086814751144
+				MNA = 0.016578615777376706
+				EPH = 196905895.18082929
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 0
-				mid = 0
-				persistentId = 2131552406
+				uid = 2042506656
+				mid = 2042506656
+				persistentId = 3822855600
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -111861,9 +111812,9 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 192352869.01825154
-				lifetime = 211717.34201634178
-				refTime = 432000
+				lastObservedTime = 191943734.85368085
+				lifetime = 672100.76293945313
+				refTime = 1728000
 				size = 1
 			}
 			FLIGHTPLAN
@@ -111884,9 +111835,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 666a7d5d13ea48d1829aa686edfd4c4a
-			persistentId = 303855402
-			name = Ast.IDK-118
+			pid = 9d9c7b7fc6d74d44afb3f001c5d2194d
+			persistentId = 1701918568
+			name = Ast.NNP-120
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -111896,17 +111847,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 192355549.85387653
-			lct = 192355549.85387653
+			met = 192183734.85368085
+			lct = 192183734.85368085
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = -0.28995638618983666
-			lon = 44.237427507247752
-			alt = 13719808549.316856
+			lat = -0.0022113142224137738
+			lon = -5.8647750745090574
+			alt = 12585971972.189159
 			hgt = -1
 			nrm = 0,1,0
-			rot = -0.386906207,0.682664871,0.0439480916,0.618337154
+			rot = 0.518623412,0.469056398,-0.581480324,0.415808111
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -111916,22 +111867,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 15964343120.880798
-				ECC = 0.15130309760486452
-				INC = 0.5148019390361176
-				LPE = 5.8476974596632134
-				LAN = 174.80832902317024
-				MNA = 0.17759623905609054
-				EPH = 193657652.1274361
+				SMA = 173533644470.31409
+				ECC = 0.9259649580470436
+				INC = -5.632897707550387
+				LPE = 259.38110972930167
+				LAN = 47.904001723173678
+				MNA = 0.17300290687558476
+				EPH = 192183734.85368085
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 1828979524
-				mid = 1828979524
-				persistentId = 3424949482
+				uid = 0
+				mid = 0
+				persistentId = 4182659359
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -111966,10 +111917,325 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 192355549.85387653
-				lifetime = 1623624.4995117188
-				refTime = 1728000
-				size = 2
+				lastObservedTime = 192183734.85368085
+				lifetime = 337115.72375610273
+				refTime = 432000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				ModuleDynamicBatteryStorage
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = b8e41ca1584546638e2cab3da71ed479
+			persistentId = 2048324933
+			name = Ast.JDA-493
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 192215734.85368085
+			lct = 192215734.85368085
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.0022236405024967992
+			lon = -30.673741781509442
+			alt = 13675499375.892673
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.412069827,0.141311929,-0.0626503155,0.89794457
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 13968503933.214113
+				ECC = 0.0022615798299356
+				INC = -33.682470399360419
+				LPE = 267.44139907420839
+				LAN = 47.904001723173678
+				MNA = -0.66742056414994455
+				EPH = 192215734.85368085
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 0
+				mid = 0
+				persistentId = 1067020852
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 1
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 192215734.85368085
+				lifetime = 244899.84505963503
+				refTime = 432000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				ModuleDynamicBatteryStorage
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 781c1df419fc47d0bc66fceb6a82380c
+			persistentId = 1946469702
+			name = Ast.JIS-829
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 192327734.85368085
+			lct = 192327734.85368085
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.0022483129341236713
+			lon = -117.50494776274532
+			alt = 13614298820.466925
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.115536883,0.757631242,-0.336476505,0.547201693
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 53937489327.239227
+				ECC = 0.74274110653767789
+				INC = 21.624349842017814
+				LPE = 267.70350693355351
+				LAN = 47.904001723173678
+				MNA = -0.49538740962729588
+				EPH = 192327734.85368085
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 0
+				mid = 0
+				persistentId = 703715630
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 1
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 192327734.85368085
+				lifetime = 290247.86955930659
+				refTime = 432000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				ModuleDynamicBatteryStorage
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = ac934abf17ad4d67b4f2962b3837c506
+			persistentId = 1637260561
+			name = Ast.SAM-396
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 192384218.31192306
+			lct = 192384218.31192306
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.0022497893721574978
+			lon = -161.29534260569491
+			alt = 14659669443.841164
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.296959668,-0.655496478,0.625192463,0.302115202
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 17697042673.180943
+				ECC = 0.15684959986439084
+				INC = -10.631544797698131
+				LPE = 270.93059655435957
+				LAN = 47.904001723173678
+				MNA = 0.42515698321442486
+				EPH = 192384218.31192306
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 0
+				mid = 0
+				persistentId = 357614660
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 1
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 192384218.31192306
+				lifetime = 169190.57020972975
+				refTime = 432000
+				size = 3
 			}
 			FLIGHTPLAN
 			{
@@ -113260,6 +113526,11 @@ GAME
 				4 = Orbit,Sun
 				4 = Flyby,Eve
 				4 = Escape,Eve
+				4 = Flight,Eve
+				4 = Suborbit,Eve
+				4 = Orbit,Eve
+				4 = ExitVessel,Eve
+				4 = BoardVessel,Eve
 			}
 		}
 		KERBAL
@@ -113956,7 +114227,7 @@ GAME
 				deployAltitude = 1000
 				spreadAngle = 7
 				automateSafeDeploy = 0
-				stagingEnabled = True
+				stagingEnabled = False
 				EVENTS
 				{
 				}
@@ -113998,6 +114269,11 @@ GAME
 				0 = Orbit,Sun
 				0 = Flyby,Eve
 				0 = Escape,Eve
+				0 = Flight,Eve
+				0 = Suborbit,Eve
+				0 = Orbit,Eve
+				0 = ExitVessel,Eve
+				0 = BoardVessel,Eve
 			}
 		}
 		KERBAL
@@ -114507,300 +114783,26 @@ GAME
 				0 = Orbit,Ike
 			}
 		}
-		KERBAL
-		{
-			name = Hula Kerman
-			gender = Male
-			type = Unowned
-			trait = Tourist
-			brave = 0.70277524
-			dumb = 0.114713706
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Nayan Kerman
-			gender = Female
-			type = Unowned
-			trait = Tourist
-			brave = 0.181970447
-			dumb = 0.821960866
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Dunmai Kerman
-			gender = Male
-			type = Unowned
-			trait = Tourist
-			brave = 0.151014924
-			dumb = 0.305315942
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Geji Kerman
-			gender = Female
-			type = Unowned
-			trait = Tourist
-			brave = 0.203867555
-			dumb = 0.670820117
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Yunyun Kerman
-			gender = Female
-			type = Unowned
-			trait = Scientist
-			brave = 0.411205679
-			dumb = 0.359549403
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Libei Kerman
-			gender = Male
-			type = Unowned
-			trait = Tourist
-			brave = 0.947742701
-			dumb = 0.724680483
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Wuban Kerman
-			gender = Male
-			type = Unowned
-			trait = Tourist
-			brave = 0.143692508
-			dumb = 0.166180909
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Maogai Kerman
-			gender = Female
-			type = Unowned
-			trait = Tourist
-			brave = 0.310024261
-			dumb = 0.594931066
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Dailang Kerman
-			gender = Male
-			type = Unowned
-			trait = Tourist
-			brave = 0.722861052
-			dumb = 0.719116986
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Luling Kerman
-			gender = Female
-			type = Unowned
-			trait = Tourist
-			brave = 0.686511636
-			dumb = 0.108854108
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
 	}
 	MESSAGESYSTEM
 	{
 		flash = True
+		MESSAGE
+		{
+			title = 合同完成
+			message = <b>探索Eve。</b>~n~n我们对Eve的探索很成功，但谁知道那里还藏着什么秘密！~n~n<b><color=#8BED8B>完成奖励:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  62,400   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = 合同条件完成
+			message = <b>探索Eve。</b>~n~n出色的工作！现在，趁着本次任务还没有变成营救任务，赶紧回到航天器去吧。~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 96,000   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
 		MESSAGE
 		{
 			title = 合同完成
@@ -115740,7 +115742,7 @@ GAME
 		MESSAGE
 		{
 			title = 世界第一里程碑
-			message = 我们的太空计划最近的成就已经吸引了不少企业前来投资！~n~n我们正在首次飞掠Minmus。~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了环绕Minmus的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,840 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Minmus的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  17,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经逃离了Minmus的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  20,880 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们第一次飞掠了Minmus并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从环绕Minmus的轨道返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,840 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从Minmus获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们进入了Minmus的亚轨道飞行。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Minmus的地表着陆。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  34,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们在Minmus表面漫步。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Minmus插旗。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经从Minmus的地表返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  34,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们已开始在Kerbin的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Kerbin附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n 我们已开始在Mun的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  37,440 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Mun附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已经在Mun附近完成了乘员转移。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已经在Minmus的轨道上完成了一次交会操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,840 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已开始在Minmus的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  41,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Minmus附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,560 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已经在Minmus附近完成了乘员转移。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,560 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们正在首次飞掠太阳。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  38,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了环绕太阳的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  36,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们正在首次飞掠Duna。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经逃离了太阳的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,360 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已经从Duna获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经逃离了Duna的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,680 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已开始在Mun上建造第一个前哨站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  37,440 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经进入了环绕Duna的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们进入了Duna的亚轨道飞行。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了Duna的大气层。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Duna的地表着陆。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  52,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们在Duna表面漫步。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Duna插旗。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Duna的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经从太阳获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们第一次飞掠了Duna并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从环绕Duna的轨道返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们第一次飞掠了太阳并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  38,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从环绕太阳的轨道返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  36,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Duna的轨道上完成了一次交会操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Duna附近完成了乘员转移。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,160 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已开始在Duna的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  63,360 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Duna附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,160 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们正在首次飞掠Ike。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了环绕Ike的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们进入了Ike的亚轨道飞行。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Ike的地表着陆。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  52,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们在Ike表面漫步。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Ike插旗。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Ike的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经逃离了Ike的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,680 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已开始在Minmus上建造第一个前哨站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  41,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-3)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在太阳的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  22,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经从Ike的地表返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  52,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们第一次飞掠了Ike并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从环绕Ike的轨道返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从Ike获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们正在首次飞掠Eve。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经逃离了Eve的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,680 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们第一次飞掠了Eve并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从Eve获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经进入了环绕Eve的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们进入了Eve的亚轨道飞行。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了Eve的大气层。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Ike的轨道上完成了一次交会操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已开始在Ike的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  63,360 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Ike附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,160 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已开始在Ike上建造第一个前哨站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  63,360 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n
+			message = 我们的太空计划最近的成就已经吸引了不少企业前来投资！~n~n我们正在首次飞掠Minmus。~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了环绕Minmus的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,840 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Minmus的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  17,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经逃离了Minmus的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  20,880 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们第一次飞掠了Minmus并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从环绕Minmus的轨道返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,840 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从Minmus获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们进入了Minmus的亚轨道飞行。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Minmus的地表着陆。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  34,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们在Minmus表面漫步。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Minmus插旗。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经从Minmus的地表返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  34,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们已开始在Kerbin的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Kerbin附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n 我们已开始在Mun的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  37,440 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Mun附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已经在Mun附近完成了乘员转移。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已经在Minmus的轨道上完成了一次交会操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,840 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已开始在Minmus的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  41,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Minmus附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,560 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已经在Minmus附近完成了乘员转移。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,560 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们正在首次飞掠太阳。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  38,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了环绕太阳的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  36,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们正在首次飞掠Duna。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经逃离了太阳的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,360 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已经从Duna获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经逃离了Duna的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,680 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已开始在Mun上建造第一个前哨站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  37,440 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经进入了环绕Duna的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们进入了Duna的亚轨道飞行。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了Duna的大气层。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Duna的地表着陆。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  52,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们在Duna表面漫步。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Duna插旗。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Duna的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经从太阳获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们第一次飞掠了Duna并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从环绕Duna的轨道返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们第一次飞掠了太阳并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  38,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从环绕太阳的轨道返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  36,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Duna的轨道上完成了一次交会操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Duna附近完成了乘员转移。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,160 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已开始在Duna的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  63,360 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Duna附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,160 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们正在首次飞掠Ike。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了环绕Ike的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们进入了Ike的亚轨道飞行。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Ike的地表着陆。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  52,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们在Ike表面漫步。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Ike插旗。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经在Ike的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经逃离了Ike的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,680 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已开始在Minmus上建造第一个前哨站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  41,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-3)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在太阳的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  22,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经从Ike的地表返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  52,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n 我们第一次飞掠了Ike并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从环绕Ike的轨道返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从Ike获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们正在首次飞掠Eve。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经逃离了Eve的重力影响。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,680 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们第一次飞掠了Eve并返回。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经从Eve获得了第一份科研数据。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,120 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n 我们已经进入了环绕Eve的轨道。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们进入了Eve的亚轨道飞行。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经进入了Eve的大气层。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#feb200>(-2)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已经在Ike的轨道上完成了一次交会操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n 我们已开始在Ike的轨道上建造第一座空间站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  63,360 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Ike附近完成了一次对接操作。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,160 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n 我们已开始在Ike上建造第一个前哨站。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  63,360 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n 我们已经在Eve的轨道上完成了一次太空行走。~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n
 			color = 3
 			icon = 6
 			read = False
